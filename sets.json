@@ -2153,5 +2153,430 @@
         "rgb": "rgb(0, 0, 0)"
       }
     ]
+  },
+  {
+    "name": "Waffen Camouflage Set",
+    "colors": [
+      {
+        "name": "Cam. SS Middle Brown",
+        "model": "70.740",
+        "rgb": "rgb(87, 68, 61)"
+      },
+      {
+        "name": "Cam. SS Dark Black Green",
+        "model": "70.741",
+        "rgb": "rgb(0, 36, 24)"
+      },
+      {
+        "name": "Saddle Brown",
+        "model": "70.940",
+        "rgb": "rgb(114, 85, 78)"
+      },
+      {
+        "name": "Olive Green",
+        "model": "70.967",
+        "rgb": "rgb(95, 109, 68)"
+      },
+      {
+        "name": "Chocolate Brown",
+        "model": "70.872",
+        "rgb": "rgb(86, 76, 64)"
+      },
+      {
+        "name": "Sunny Skin Tone",
+        "model": "70.845",
+        "rgb": "rgb(235, 174, 118)"
+      },
+      {
+        "name": "Orange Brown",
+        "model": "70.981",
+        "rgb": "rgb(184, 108, 57)"
+      },
+      {
+        "name": "German Cam. Black Brown",
+        "model": "70.822",
+        "rgb": "rgb(72, 67, 65)"
+      }
+    ]
+  },
+  {
+    "name": "German Field Grey",
+    "colors": [
+      {
+        "name": "German Fieldgrey WWII",
+        "model": "70.830",
+        "rgb": "rgb(95, 95, 86)"
+      },
+      {
+        "name": "VBronce Green",
+        "model": "70.897",
+        "rgb": "rgb(79, 83, 81)"
+      },
+      {
+        "name": "Yellow Olive",
+        "model": "70.892",
+        "rgb": "rgb(36, 57, 43)"
+      },
+      {
+        "name": "Dark Seagreen",
+        "model": "70.868",
+        "rgb": "rgb(83, 87, 97)"
+      },
+      {
+        "name": "Sunny Skin Tone",
+        "model": "70.845",
+        "rgb": "rgb(235, 174, 118)"
+      },
+      {
+        "name": "Pastel Green",
+        "model": "70.885",
+        "rgb": "rgb(166, 168, 146)"
+      },
+      {
+        "name": "Blue Grey Pale",
+        "model": "70.905",
+        "rgb": "rgb(129, 139, 144)"
+      },
+      {
+        "name": "Black",
+        "model": "70.950",
+        "rgb": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "name": "Face Painting Set",
+    "colors": [
+      {
+        "name": "Red Beige",
+        "model": "70.804",
+        "rgb": "rgb(202, 149, 99)"
+      },
+      {
+        "name": "Violet Red",
+        "model": "70.812",
+        "rgb": "rgb(110, 38, 62)"
+      },
+      {
+        "name": "Cad. Umber Red",
+        "model": "70.814",
+        "rgb": "rgb(101, 50, 46)"
+      },
+      {
+        "name": "Basic Skin Tone",
+        "model": "70.815",
+        "rgb": "rgb(248, 190, 142)"
+      },
+      {
+        "name": "Black Red",
+        "model": "70.859",
+        "rgb": "rgb(97, 47, 50)"
+      },
+      {
+        "name": "Brown Sand",
+        "model": "70.876",
+        "rgb": "rgb(174, 124, 89)"
+      },
+      {
+        "name": "Light Flesh",
+        "model": "70.928",
+        "rgb": "rgb(255, 240, 217)"
+      },
+      {
+        "name": "Black",
+        "model": "70.950",
+        "rgb": "rgb(25, 23, 28)"
+      }
+    ]
+  },
+  {
+    "name": "Winter weathering set",
+    "colors": [
+      {
+        "name": "Red Leather",
+        "model": "70.818",
+        "rgb": "rgb(143, 87, 65)"
+      },
+      {
+        "name": "Gunmetal Grey",
+        "model": "70.863",
+        "rgb": "rgb(97, 103, 97)"
+      },
+      {
+        "name": "Basalt Grey",
+        "model": "70.869",
+        "rgb": "rgb(8, 122, 90)"
+      },
+      {
+        "name": "Chocolate Brown",
+        "model": "70.872",
+        "rgb": "rgb(86, 76, 64)"
+      },
+      {
+        "name": "Tan Earth",
+        "model": "70.874",
+        "rgb": "rgb(143, 116, 91)"
+      },
+      {
+        "name": "Foundation White",
+        "model": "70.919",
+        "rgb": "rgb(255, 255, 255)"
+      },
+      {
+        "name": "Black",
+        "model": "70.950",
+        "rgb": "rgb(0, 0, 0)"
+      },
+      {
+        "name": "Sepia Wash",
+        "model": "73.200",
+        "rgb": "rgb(136, 89, 21)"
+      },
+      {
+        "name": "Sandy Paste",
+        "model": "26.232",
+        "rgb": "rgb(221, 220, 215)"
+      }
+    ]
+  },
+  {
+    "name": "Weathering a Steam Locomotive",
+    "colors": [
+      {
+        "name": "Basic Rust",
+        "model": "73.001",
+        "rgb": "rgb(147, 62, 48)"
+      },
+      {
+        "name": "Grease and Oil",
+        "model": "73.002",
+        "rgb": "rgb(4, 6, 9)"
+      },
+      {
+        "name": "Steel",
+        "model": "73.003",
+        "rgb": "rgb(122, 124, 113)"
+      },
+      {
+        "name": "Basic Brown",
+        "model": "73.004",
+        "rgb": "rgb(76, 68, 51)"
+      },
+      {
+        "name": "Dirt",
+        "model": "73.005",
+        "rgb": "rgb(159, 118, 90)"
+      },
+      {
+        "name": "Chalk White",
+        "model": "73.006",
+        "rgb": "rgb(225, 225, 215)"
+      },
+      {
+        "name": "Basic Red",
+        "model": "73.007",
+        "rgb": "rgb(180, 28, 39)"
+      },
+      {
+        "name": "Liquid Mask",
+        "model": "73.008",
+        "rgb": "rgb(255, 255, 255)"
+      },
+      {
+        "name": "Matte Varnish",
+        "model": "73.009",
+        "rgb": "rgb(255, 255, 255)"
+      }
+    ]
+  },
+  {
+    "name": "Black & White",
+    "colors": [
+      {
+        "name": "Black",
+        "model": "70.950",
+        "rgb": "rgb(0, 0, 0)"
+      },
+      {
+        "name": "Dark Grey",
+        "model": "70.994",
+        "rgb": "rgb(76, 81, 86)"
+      },
+      {
+        "name": "Neutral Grey",
+        "model": "70.992",
+        "rgb": "rgb(106, 112, 120)"
+      },
+      {
+        "name": "Flat Earth",
+        "model": "70.983",
+        "rgb": "rgb(113, 86, 60)"
+      },
+      {
+        "name": "German Cam. Beige WWII",
+        "model": "70.821",
+        "rgb": "rgb(135, 133, 110)"
+      },
+      {
+        "name": "Deck Tan",
+        "model": "70.986",
+        "rgb": "rgb(199, 205, 184)"
+      },
+      {
+        "name": "Ivory",
+        "model": "70.918",
+        "rgb": "rgb(243, 239, 211)"
+      },
+      {
+        "name": "White",
+        "model": "70.951",
+        "rgb": "rgb(255, 255, 255)"
+      }
+    ]
+  },
+  {
+    "name": "Wood & Leather",
+    "colors": [
+      {
+        "name": "Dark Sand",
+        "model": "70.847",
+        "rgb": "rgb(208, 177, 131)"
+      },
+      {
+        "name": "Japan Uniform WWII",
+        "model": "70.923",
+        "rgb": "rgb(157, 123, 60)"
+      },
+      {
+        "name": "Orange Brown",
+        "model": "70.981",
+        "rgb": "rgb(184, 108, 57)"
+      },
+      {
+        "name": "Flat Earth",
+        "model": "70.983",
+        "rgb": "rgb(113, 86, 60)"
+      },
+      {
+        "name": "Chocolate Brown",
+        "model": "70.872",
+        "rgb": "rgb(86, 76, 64)"
+      },
+      {
+        "name": "Wookgrain",
+        "model": "70.828",
+        "rgb": "rgb(76, 60, 52)"
+      },
+      {
+        "name": "Smoke",
+        "model": "70.939",
+        "rgb": "rgb(68, 63, 56)"
+      },
+      {
+        "name": "Black",
+        "model": "70.950",
+        "rgb": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "name": "Rust, Stain & Streaking",
+    "colors": [
+      {
+        "name": "Chocolate Brown",
+        "model": "70.872",
+        "rgb": "rgb(86, 76, 64)"
+      },
+      {
+        "name": "German Cam. Black Brown",
+        "model": "70.822",
+        "rgb": "rgb(72, 67, 65)"
+      },
+      {
+        "name": "Orange Brown",
+        "model": "70.981",
+        "rgb": "rgb(184, 108, 57)"
+      },
+      {
+        "name": "Chocolate Brown",
+        "model": "70.872",
+        "rgb": "rgb(86, 76, 64)"
+      },
+      {
+        "name": "Light Rust",
+        "model": "70.301",
+        "rgb": "rgb(136, 57, 40)"
+      },
+      {
+        "name": "Dark Rust",
+        "model": "70.302",
+        "rgb": "rgb(52, 45, 40)"
+      },
+      {
+        "name": "Orange Rust",
+        "model": "71.130",
+        "rgb": "rgb(195, 98, 45)"
+      },
+      {
+        "name": "Wood",
+        "model": "71.077",
+        "rgb": "rgb(164, 112, 54)"
+      },
+      {
+        "name": "Light Rust Wash",
+        "model": "505",
+        "rgb": "rgb(234, 122, 27)"
+      }
+    ]
+  },
+  {
+    "name": "Rust and Steel Effects",
+    "colors": [
+      {
+        "name": "Gunmetal Grey",
+        "model": "70.863",
+        "rgb": "rgb(97, 103, 97)"
+      },
+      {
+        "name": "Basalt Grey",
+        "model": "70.869",
+        "rgb": "rgb(8, 122, 90)"
+      },
+      {
+        "name": "Burnt Umber",
+        "model": "70.941",
+        "rgb": "rgb(103, 81, 65)"
+      },
+      {
+        "name": "Saddle Brown",
+        "model": "70.940",
+        "rgb": "rgb(114, 85, 78)"
+      },
+      {
+        "name": "Red Leather",
+        "model": "70.818",
+        "rgb": "rgb(143, 87, 65)"
+      },
+      {
+        "name": "Orange Brown",
+        "model": "70.981",
+        "rgb": "rgb(184, 108, 57)"
+      },
+      {
+        "name": "Clear Orange",
+        "model": "70.956",
+        "rgb": "rgb(200, 77, 54)"
+      },
+      {
+        "name": "Sepia Wash",
+        "model": "73.200",
+        "rgb": "rgb(136, 89, 21)"
+      },
+      {
+        "name": "Brown Iron Oxide Pigment",
+        "model": "73.108",
+        "rgb": "rgb(140, 64, 61)"
+      }
+    ]
   }
 ]
