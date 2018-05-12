@@ -1888,5 +1888,270 @@
         "rgb": "rgb(0, 130, 148)"
       }
     ]
+  },
+  {
+    "name": "US Infantry Paint Set",
+    "colors": [
+      {
+        "name": "Brown Violet",
+        "model": "70.887",
+        "rgb": "rgb(95, 89, 72)"
+      },
+      {
+        "name": "Khaki",
+        "model": "70.988",
+        "rgb": "rgb(133, 120, 92)"
+      },
+      {
+        "name": "Green Grey",
+        "model": "70.886",
+        "rgb": "rgb(118, 117, 105)"
+      },
+      {
+        "name": "US Field Drab",
+        "model": "70.873",
+        "rgb": "rgb(124, 102, 78)"
+      },
+      {
+        "name": "Tan Earth",
+        "model": "70.874",
+        "rgb": "rgb(143, 116, 91)"
+      },
+      {
+        "name": "Red Leather",
+        "model": "70.818",
+        "rgb": "rgb(143, 87, 65)"
+      }
+    ]
+  },
+  {
+    "name": "German SS Paint Set",
+    "colors": [
+      {
+        "name": "German Cam. Orange Ochre",
+        "model": "70.824",
+        "rgb": "rgb(164, 127, 76)"
+      },
+      {
+        "name": "German Cam. Bright Green",
+        "model": "70.833",
+        "rgb": "rgb(93, 112, 76)"
+      },
+      {
+        "name": "German Cam. Dark Green",
+        "model": "70.979",
+        "rgb": "rgb(74, 76, 70)"
+      },
+      {
+        "name": "German Cam. Pale Brown",
+        "model": "70.825",
+        "rgb": "rgb(131, 105, 84)"
+      },
+      {
+        "name": "German Cam. Black Brown",
+        "model": "70.822",
+        "rgb": "rgb(72, 67, 65)"
+      },
+      {
+        "name": "Light Brown",
+        "model": "70.929",
+        "rgb": "rgb(191, 115, 68)"
+      }
+    ]
+  },
+  {
+    "name": "British Paint Set",
+    "colors": [
+      {
+        "name": "Russian Uniform WWII",
+        "model": "70.924",
+        "rgb": "rgb(104, 99, 78)"
+      },
+      {
+        "name": "Khaki",
+        "model": "70.988",
+        "rgb": "rgb(133, 120, 92)"
+      },
+      {
+        "name": "English Uniform",
+        "model": "70.921",
+        "rgb": "rgb(114, 93, 64)"
+      },
+      {
+        "name": "Green Ochre",
+        "model": "70.914",
+        "rgb": "rgb(176, 142, 95)"
+      },
+      {
+        "name": "Refractive Green",
+        "model": "70.890",
+        "rgb": "rgb(85, 86, 67)"
+      },
+      {
+        "name": "Flat Earth",
+        "model": "70.983",
+        "rgb": "rgb(113, 86, 60)"
+      }
+    ]
+  },
+  {
+    "name": "German Infantry Paint Set",
+    "colors": [
+      {
+        "name": "German Cam. Dark Green",
+        "model": "70.979",
+        "rgb": "rgb(74, 76, 70)"
+      },
+      {
+        "name": "German Cam. Beige WWII",
+        "model": "70.821",
+        "rgb": "rgb(135, 133, 110)"
+      },
+      {
+        "name": "German Cam. Med. Brown",
+        "model": "70.826",
+        "rgb": "rgb(98, 82, 64)"
+      },
+      {
+        "name": "Luftwaffe Cam. Green",
+        "model": "70.823",
+        "rgb": "rgb(69, 78, 59)"
+      },
+      {
+        "name": "Green Grey",
+        "model": "70.886",
+        "rgb": "rgb(118, 117, 105)"
+      },
+      {
+        "name": "German Fieldgrey WWII",
+        "model": "70.830",
+        "rgb": "rgb(95, 95, 86)"
+      }
+    ]
+  },
+  {
+    "name": "German Armour Paint Set",
+    "colors": [
+      {
+        "name": "Middlestone",
+        "model": "70.882",
+        "rgb": "rgb(147, 126, 78)"
+      },
+      {
+        "name": "Refractive Green",
+        "model": "70.890",
+        "rgb": "rgb(85, 86, 67)"
+      },
+      {
+        "name": "Chocolate Brown",
+        "model": "70.872",
+        "rgb": "rgb(114, 93, 64)"
+      },
+      {
+        "name": "German Grey",
+        "model": "70.995",
+        "rgb": "rgb(68, 71, 77)"
+      },
+      {
+        "name": "Track Primer",
+        "model": "70.304",
+        "rgb": "rgb(88, 75, 62)"
+      },
+      {
+        "name": "Ivory",
+        "model": "70.918",
+        "rgb": "rgb(243, 239, 211)"
+      }
+    ]
+  },
+  {
+    "name": "Infantry Basic Paint Set",
+    "colors": [
+      {
+        "name": "Flat Flesh",
+        "model": "70.955",
+        "rgb": "rgb(224, 166, 125)"
+      },
+      {
+        "name": "Beige Brown",
+        "model": "70.875",
+        "rgb": "rgb(145, 119, 95)"
+      },
+      {
+        "name": "Gunmetal Grey",
+        "model": "70.863",
+        "rgb": "rgb(97, 103, 97)"
+      },
+      {
+        "name": "Black Grey",
+        "model": "70.862",
+        "rgb": "rgb(70, 74, 76)"
+      },
+      {
+        "name": "White",
+        "model": "70.951",
+        "rgb": "rgb(255, 255, 255)"
+      },
+      {
+        "name": "Deep Yellow",
+        "model": "70.915",
+        "rgb": "rgb(255, 226, 9)"
+      },
+      {
+        "name": "Flat Red",
+        "model": "70.957",
+        "rgb": "rgb(166, 59, 57)"
+      },
+      {
+        "name": "Dark Blue",
+        "model": "70.930",
+        "rgb": "rgb(50, 97, 153)"
+      }
+    ]
+  },
+  {
+    "name": "Vehicle Basic Paint Set",
+    "colors": [
+      {
+        "name": "Brass",
+        "model": "70.801",
+        "rgb": "rgb(150, 111, 47)"
+      },
+      {
+        "name": "Gunmetal Grey",
+        "model": "70.863",
+        "rgb": "rgb(97, 103, 97)"
+      },
+      {
+        "name": "Track Primer",
+        "model": "70.304",
+        "rgb": "rgb(88, 75, 62)"
+      },
+      {
+        "name": "Dark Rubber",
+        "model": "70.306",
+        "rgb": "rgb(80, 83, 83)"
+      },
+      {
+        "name": "New Wood",
+        "model": "70.311",
+        "rgb": "rgb(167, 99, 59)"
+      },
+      {
+        "name": "Canvas",
+        "model": "70.314",
+        "rgb": "rgb(100, 89, 52)"
+      },
+      {
+        "name": "Sepia Wash",
+        "model": "73.200",
+        "rgb": "rgb(136, 89, 21)"
+      },
+      {
+        "name": "Black Wash",
+        "model": "73.201",
+        "rgb": "rgb(0, 0, 0)"
+      }
+    ]
   }
 ]
