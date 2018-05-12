@@ -8,6 +8,8 @@
 	--label-inner-margin: calc(var(--descriptor-size) / 3.8);
 	--block-border-width: calc(var(--descriptor-size) / 10);
 	--block-border-radius: var(--descriptor-size);
+	--visual-cue-line-width: calc(var(--descriptor-size) / 3);
+	--visual-cue-line-color: rgba(128, 128, 128, 0.5);
 }
 h2 {
 	font-size: calc(var(--descriptor-size) * 2);
@@ -71,4 +73,29 @@ h2 {
 .colorName {
 	margin-top: var(--label-inner-margin);
 }
-
+.auxiliary {
+	background-image: repeating-linear-gradient(
+		-45deg,
+		transparent,
+		transparent var(--visual-cue-line-width),
+		var(--visual-cue-line-color) var(--visual-cue-line-width),
+		var(--visual-cue-line-color) calc(var(--visual-cue-line-width) * 2)
+		);
+}
+.wash {
+	background-image: repeating-linear-gradient(
+		45deg,
+		transparent,
+		transparent var(--visual-cue-line-width),
+		var(--visual-cue-line-color) var(--visual-cue-line-width),
+		var(--visual-cue-line-color) calc(var(--visual-cue-line-width) * 2)
+		);
+}
+.pigment {
+	background-image: repeating-linear-gradient(
+		transparent,
+		transparent var(--visual-cue-line-width),
+		var(--visual-cue-line-color) var(--visual-cue-line-width),
+		var(--visual-cue-line-color) calc(var(--visual-cue-line-width) * 2)
+		);
+}
