@@ -1,3 +1,20 @@
+const PRODUCT_LINES = {
+	DECORATIVE_ARTS: "Decorative Arts"
+}
+
+const PRODUCT_RANGES = {
+	MODEL_WASH: "Model Wash",
+	PIGMENTS: "Pigments",
+	MODEL_AIR: "Model Air",
+	GAME_COLOR: "Game Color",
+	AUXILIARIES: "Auxiliaries"
+}
+
+const PRODUCT_CATEGORIES = {
+	WASH: "wash",
+	MEDIUM: "medium"
+}
+
 var sets = [
 {
 	name: "bogus set",
@@ -12,31 +29,38 @@ var sets = [
 		name: "Model Air Color",
 		model: "71.xxx",
 		rgb: "rgb(42, 86, 23)",
-		range: "Model Air"
+		range: PRODUCT_RANGES.MODEL_AIR
 	},
 	{
 		name: "Wash",
 		model: "76.xxx",
 		rgb: "rgb(86, 23, 42)",
-		range: "Model Wash"
+		range: PRODUCT_RANGES.MODEL_WASH
 	},
 	{
 		name: "Pigment",
 		model: "73.xxx",
 		rgb: "rgb(42, 23, 86)",
-		range: "Pigments"
+		range: PRODUCT_RANGES.PIGMENTS
 	},
 	{
 		name: "Game Color Wash",
 		model: "73.xxx",
 		rgb: "rgb(23, 42, 86)",
-		range: "Game Color",
-		category: "wash"
+		range: PRODUCT_RANGES.GAME_COLOR,
+		category: PRODUCT_CATEGORIES.WASH
 	},
 	{
-		name: "Auxiliary",
+		name: "Lovely Medium",
 		model: "73.xxx",
-		range: "Auxiliaries"
+		range: PRODUCT_RANGES.AUXILIARIES,
+		category: PRODUCT_CATEGORIES.MEDIUM
+	},
+	{
+		name: "Pasty Paste",
+		model: "26.xxx",
+		line: PRODUCT_LINES.DECORATIVE_ARTS,
+		range: PRODUCT_RANGES.AUXILIARIES
 	}
 	]
 },
