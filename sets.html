@@ -2,243 +2,145 @@
 <head>
 	<title>Vallejo Model Color Kits</title>	
 	<style>
-	table { border-spacing: 0.5rem; }
-	.swatch { width: 3rem; }
+	:root {
+		font-size: 1em;
+		font-family: sans-serif;
+
+		--outline-color: #111;
+		/* after calc()ing the other values based on this variable, can not muck
+			about with the :root font-size */
+		--descriptor-size: 0.6rem;
+		--label-outer-margin: calc(var(--descriptor-size) / 3);
+		--label-inner-margin: calc(var(--descriptor-size) / 3.8);
+		--block-border-width: calc(var(--descriptor-size) / 10);
+		--block-border-radius: var(--descriptor-size);
+	}
+	h2 {
+		font-size: calc(var(--descriptor-size) * 2);
+		margin: calc(var(--descriptor-size) / 6);
+	}
+	.fun {
+		float: right;
+		border: solid 0.1rem var(--outline-color);
+		border-radius: 0.2rem;
+		padding: 0.1rem;
+		background-color: lavender;
+		filter: invert(100%);
+	}
+	.fun input, .fun button {
+		font-size: 1.5rem;
+		color: lavender;
+		background-color: var(--outline-color);
+	}
+	.fun input {
+		width: 4rem;
+		text-align: center;
+	}
+	.vallejo-color-sets {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	/* bordered blocks */
+	.vallejo-color-sets article, .swatch {
+		border: solid var(--block-border-width) var(--outline-color);
+		border-radius: var(--block-border-radius);
+	}
+
+	.vallejo-color-sets article {
+		margin: calc(var(--descriptor-size) / 2);
+		background-color: lightgrey;
+	}
+	.swatches {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.swatch {
+		margin: var(--label-outer-margin);
+		text-align: center;
+		min-height: calc(var(--descriptor-size) * 5);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.swatch .descriptor {
+		font-size: var(--descriptor-size);
+		color: #ddd;
+		background-color: var(--outline-color);
+		opacity: 0.5;
+		white-space: nowrap;
+		padding: calc(var(--descriptor-size) / 3);
+		border-radius: calc(var(--descriptor-size) / 3);
+	}
+	.modelNumber {
+		margin-bottom: var(--label-inner-margin);
+	}
+	.colorName {
+		margin-top: var(--label-inner-margin);
+	}
 </style>
 </head>
 
 <body>
-	<h1>Vallejo Model Color Kits</h1>
-	<h2>8 color</h2>
-	<h3>Wargames Basics (70.103)</h3>
-	<table>
-		<tbody>
-			<tr>
-				<td class="swatch" style="background-color:#458C3C;"></td><td>70.891</td><td>Interm. Green</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#DE4317;"></td><td>70.910</td><td>Orange Red</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#DDA95C;"></td><td>70.927</td><td>Dark Flesh</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#8D5546;"></td><td>70.940</td><td>Saddle Brown</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#19171C;"></td><td>70.950</td><td>Black</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#FFFFFF;"></td><td>70.951</td><td>White</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#015F81;"></td><td>70.963</td><td>Medium Blue</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#CDD3CF;"></td><td>70.997</td><td>Silver</td>
-			</tr>
-		</tbody>
-	</table>
-	<h3>Elfos (70.104)</h3>
-	<table>
-		<tbody>
-			<tr>
-				<td class="swatch" style="background-color:#B51A28;"></td><td>70.908</td><td>Carmine Red</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#FFF0D9;"></td><td>70.928</td><td>Light Flesh</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#8394A8;"></td><td>70.938</td><td>Transparent Blue</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#FFFFFF;"></td><td>70.951</td><td>White</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#9DD9F3;"></td><td>70.961</td><td>Sky Blue</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#CDD3CF;"></td><td>70.997</td><td>Silver</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#FDE85B;"></td><td>70.949</td><td>Light Yellow</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#CFB256;"></td><td>70.996</td><td>Gold</td>
-			</tr>
-		</tbody>
-	</table>
-	<h3>Orcos y Goblins (70.105)</h3>
-	<table>
-		<tbody>
-			<tr>
-				<td class="swatch" style="background-color:#79AA34;"></td><td>70.827</td><td>Lime Green</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#FDE85B;"></td><td>70.949</td><td>Light Yellow</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#19171C;"></td><td>70.950</td><td>Negro</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#2B493F;"></td><td>70.979</td><td>G. C. Dark Green</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#CDD3CF;"></td><td>70.997</td><td>Plata</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#AB4E25;"></td><td>70.999</td><td>Copper</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#458C3C;"></td><td>70.891</td><td>Verde Medio</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#CF1A23;"></td><td>70.909</td><td>C. Red Vermillion</td>
-			</tr>
-		</tbody>
-	</table>
-	<h3>Non Death Chaos (70.106)</h3>
-	<table>
-		<tbody>
-			<tr>
-				<td class="swatch" style="background-color:#F5F4DF;"></td><td>70.918</td><td>Ivory</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#7A7C71;"></td><td>70.865</td><td>Oily Steel</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#CF1A23;"></td><td>70.909</td><td>C. Red Vermillion</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#DEC575;"></td><td>70.916</td><td>Sand Yellow</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#19171C;"></td><td>70.950</td><td>Black</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#844864;"></td><td>70.959</td><td>Purple</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#AB4E25;"></td><td>70.999</td><td>Copper</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#A41B47;"></td><td>70.945</td><td>Magenta</td>
-			</tr>
-		</tbody>
-	</table>
-	<h3>Panzer Colors (70.108)</h3>
-	<table>
-		<tbody>
-			<tr>
-				<td class="swatch" style="background-color:#2D3738;"></td><td>70.862</td><td>Black Grey</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#614E3F;"></td><td>70.872</td><td>Chocolate Brown</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#947C50;"></td><td>70.879</td><td>Green Brown</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#908253;"></td><td>70.880</td><td>Khaki Grey</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#4B6542;"></td><td>70.890</td><td>Reflective Green</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#A3944F;"></td><td>70.978</td><td>Dark Yellow</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#DEC575;"></td><td>70.916</td><td>Amarillo Arena</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#7A7C71;"></td><td>70.865</td><td>Oily Steel</td>
-			</tr>
-		</tbody>
-	</table>
-	<h3>Skintones Colors (70.124)</h3>
-	<table>
-		<tbody>
-			<tr>
-				<td class="swatch" style="background-color:#F8BE8E;"></td><td>70.815</td><td>Basic Skin Tone</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#EFB36A;"></td><td>70.845</td><td>Sunny Skintone</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#C18336;"></td><td>70.860</td><td>Medium Fleshtone</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#DDA95C;"></td><td>70.927</td><td>Dark Flesh</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#FFF0D9;"></td><td>70.928</td><td>Light Flesh</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#DFAE76;"></td><td>70.955</td><td>Flat Flesh</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#CE8670;"></td><td>70.803</td><td>Rose Brown</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#F3A388;"></td><td>70.835</td><td>Salmon Rosa</td>
-			</tr>
-		</tbody>
-	</table>
-	<h3>Demag Africa Corps (70.138)</h3>
-	<table>
-		<tbody>
-			<tr>
-				<td class="swatch" style="background-color:#FFFFFF;"></td><td>70.520</td><td>Matt Varnish</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#2D3738;"></td><td>70.862</td><td>Black Grey</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#626761;"></td><td>70.863</td><td>Gummetal Grey</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#395547;"></td><td>70.888</td><td>Olive Grey</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#3C6756;"></td><td>70.895</td><td>Gunship Green</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#A3944F;"></td><td>70.978</td><td>Amarillo Camuflaje</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#9EA19A;"></td><td>70.990</td><td>Light Grey</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#657779;"></td><td>70.992</td><td>Neutral Grey</td>
-			</tr>
-		</tbody>
-	</table>
-	<h3>Demag Rusia 1942 (70.139)</h3>
-	<table>
-		<tbody>
-			<tr>
-				<td class="swatch" style="background-color:#FFFFFF;"></td><td>70.520</td><td>Matt Varnish</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#CA9563;"></td><td>70.804</td><td>Red Beige</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#943E31;"></td><td>70.818</td><td>Red Leather</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#2D3738;"></td><td>70.862</td><td>Black Grey</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#947C50;"></td><td>70.879</td><td>Green Brown</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#A8ADA7;"></td><td>70.905</td><td>Blue Grey Pale</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#FFFFFF;"></td><td>70.919</td><td>Foundation White</td>
-			</tr>
-			<tr>
-				<td class="swatch" style="background-color:#19171C;"></td><td>70.950</td><td>Black</td>
-			</tr>
-		</tbody>
-	</table>
+	<aside class="fun">Just for fun, change the size of the descriptor labels: <input type="text" name="descriptor-size" value="0.6" /> rem <button name="update">update</button></aside>
+
+	<header>
+		<h1>Vallejo Model Color Kits</h1>
+	</header>
+
+	<section class="vallejo-color-sets" />
+
+	<script src="./setsData.js"></script>
+	<script>
+		var createSet = function(set) {
+			var article = document.createElement('article')
+			article.appendChild(createHeading(set))
+			article.appendChild(createSwatches(set))
+			return article
+		}
+
+		var createHeading = function(set) {
+			var heading = document.createElement('h2')
+			heading.textContent = set.name
+			return heading
+		}
+
+		var createSwatches = function(set) {
+			var swatches = document.createElement('div')
+			swatches.className = 'swatches'
+			set.colors.map(createSwatch).forEach(c => swatches.appendChild(c))
+			return swatches
+		}
+
+		var createSwatch = function(color) {
+			var swatch = document.createElement('div')
+			swatch.className = 'swatch'
+			swatch.style.backgroundColor = color.rgb
+			swatch.appendChild(createDescriptor(color.model, 'modelNumber'))
+			swatch.appendChild(createDescriptor(color.name, 'colorName'))
+			return swatch
+		}
+		var createDescriptor = function(textContent, className) {
+			var label = document.createElement('div')
+			label.className = className
+			var content = label.appendChild(document.createElement('span'))
+			content.className = 'descriptor'
+			content.textContent = textContent
+			return label
+		}
+		window.onload = function() {
+			var setsSection = document.querySelector('.vallejo-color-sets')
+			sets.map(createSet).forEach(s => setsSection.appendChild(s))
+
+			document.querySelector('button[name="update"]').onclick = updateDescriptorSize
+		}
+
+		var updateDescriptorSize = function() {
+			document.querySelector(':root').style.setProperty('--descriptor-size', selectedDescriptorSize() + 'rem')
+		}
+		var selectedDescriptorSize = function() {
+			return document.querySelector('input[name="descriptor-size"]').value
+		}
+	</script>
+</body>
+
+</html>
