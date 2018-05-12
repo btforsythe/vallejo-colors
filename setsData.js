@@ -7,6 +7,36 @@ var sets = [
 		"name": "Very Pleasing Color",
 		"model": "70.xxx",
 		"rgb": "rgb(86, 42, 23)"
+	},
+	{
+		"name": "Model Air Color",
+		"model": "71.xxx",
+		"rgb": "rgb(42, 86, 23)",
+		"range": "Model Air"
+	},
+	{
+		"name": "Wash",
+		"model": "76.xxx",
+		"rgb": "rgb(86, 23, 42)",
+		"range": "Model Wash"
+	},
+	{
+		"name": "Pigment",
+		"model": "73.xxx",
+		"rgb": "rgb(42, 23, 86)",
+		"range": "Pigments"
+	},
+	{
+		"name": "Game Color Wash",
+		"model": "73.xxx",
+		"rgb": "rgb(23, 42, 86)",
+		"range": "Game Color",
+		"category": "wash"
+	},
+	{
+		"name": "Auxiliary",
+		"model": "73.xxx",
+		"range": "Auxiliaries"
 	}
 	]
 },
@@ -2576,7 +2606,7 @@ var sets = [
 	},
 	{
 		"name": "Light Rust Wash",
-		"model": "505",
+		"model": "76.505",
 		"rgb": "rgb(234, 122, 27)"
 	}
 	]
