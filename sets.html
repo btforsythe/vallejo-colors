@@ -1,6 +1,11 @@
 <html>
 <head>
-	<title>Vallejo Model Color Kits</title>	
+	<title>Vallejo Model Color Kits</title>
+
+	<!-- material design icons from https://google.github.io/material-design-icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 	<style>
 	:root {
 		font-size: 1em;
@@ -77,6 +82,13 @@
 	.colorName {
 		margin-top: var(--label-inner-margin);
 	}
+
+	/* material design icons */
+	h2 .material-icons {
+		color: rgba(0, 0, 0, 0.54);
+		font-size: 0.75em;
+		padding-left: 0.2rem;
+	}
 </style>
 </head>
 
@@ -101,7 +113,17 @@
 		var createHeading = function(set) {
 			var heading = document.createElement('h2')
 			heading.textContent = set.name
+			heading.appendChild(createSetLink(set))
 			return heading
+		}
+
+		var createSetLink = function(set) {
+			var link = document.createElement('a')
+			link.className = 'material-icons'
+			link.href = 'http://acrylicosvallejo.com'
+			link.textContent = 'open_in_new'
+			link.target = '_blank'
+			return link
 		}
 
 		var createSwatches = function(set) {
