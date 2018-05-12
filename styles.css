@@ -1,0 +1,74 @@
+:root {
+	font-size: 1em;
+	font-family: sans-serif;
+
+	--outline-color: #111;
+	--descriptor-size: 0.6rem;
+	--label-outer-margin: calc(var(--descriptor-size) / 3);
+	--label-inner-margin: calc(var(--descriptor-size) / 3.8);
+	--block-border-width: calc(var(--descriptor-size) / 10);
+	--block-border-radius: var(--descriptor-size);
+}
+h2 {
+	font-size: calc(var(--descriptor-size) * 2);
+	margin: calc(var(--descriptor-size) / 6);
+}
+.fun {
+	float: right;
+	border: solid 0.1rem var(--outline-color);
+	border-radius: 0.2rem;
+	padding: 0.1rem;
+	background-color: lavender;
+	filter: invert(100%);
+}
+.fun input, .fun button {
+	font-size: 1.5rem;
+	color: lavender;
+	background-color: var(--outline-color);
+}
+.fun input {
+	width: 4rem;
+	text-align: center;
+}
+.vallejo-color-sets {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+/* bordered blocks */
+.vallejo-color-sets article, .swatch {
+	border: solid var(--block-border-width) var(--outline-color);
+	border-radius: var(--block-border-radius);
+}
+
+.vallejo-color-sets article {
+	margin: calc(var(--descriptor-size) / 2);
+	background-color: lightgrey;
+}
+.swatches {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.swatch {
+	margin: var(--label-outer-margin);
+	text-align: center;
+	min-height: calc(var(--descriptor-size) * 5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.swatch .descriptor {
+	font-size: var(--descriptor-size);
+	color: #ddd;
+	background-color: var(--outline-color);
+	opacity: 0.5;
+	white-space: nowrap;
+	padding: calc(var(--descriptor-size) / 3);
+	border-radius: calc(var(--descriptor-size) / 3);
+}
+.modelNumber {
+	margin-bottom: var(--label-inner-margin);
+}
+.colorName {
+	margin-top: var(--label-inner-margin);
+}
+
