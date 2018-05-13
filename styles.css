@@ -32,11 +32,12 @@ h2 {
 	width: 4rem;
 	text-align: center;
 }
+
 .vallejo-color-sets {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	display: flex;
+	flex-wrap: wrap;
 }
-/* bordered blocks */
+
 .vallejo-color-sets article, .swatch {
 	border: solid var(--block-border-width) var(--outline-color);
 	border-radius: var(--block-border-radius);
