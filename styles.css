@@ -48,7 +48,7 @@ h2 {
 }
 .swatches {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(4, calc(var(--descriptor-size) * 10));
 }
 .swatch {
 	margin: var(--label-outer-margin);
