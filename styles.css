@@ -63,15 +63,9 @@ h2 {
 	color: #ddd;
 	background-color: var(--outline-color);
 	opacity: 0.5;
-	white-space: nowrap;
+	margin: 0 auto;
 	padding: calc(var(--descriptor-size) / 3);
 	border-radius: calc(var(--descriptor-size) / 3);
-}
-.modelNumber {
-	margin-bottom: var(--label-inner-margin);
-}
-.colorName {
-	margin-top: var(--label-inner-margin);
 }
 .auxiliary {
 	background-image: repeating-linear-gradient(

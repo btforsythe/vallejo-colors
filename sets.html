@@ -63,10 +63,17 @@
 			var swatch = document.createElement('div')
 			swatch.className = 'swatch'
 			swatch.style.backgroundColor = color.rgb
-			swatch.appendChild(createDescriptor(color.model, 'modelNumber'))
-			swatch.appendChild(createDescriptor(color.name, 'colorName'))
+			swatch.appendChild(createDescriptor(color.model))
+			swatch.appendChild(createDescriptor(color.name))
 			addVisualCues(color, swatch)
 			return swatch
+		}
+
+		var createDescriptor = function(textContent) {
+			var label = document.createElement('div')
+			label.className = 'descriptor'
+			label.textContent = textContent
+			return label
 		}
 
 		// TODO move to method on color object
@@ -81,14 +88,6 @@
 			}
 		}
 
-		var createDescriptor = function(textContent, className) {
-			var label = document.createElement('div')
-			label.className = className
-			var content = label.appendChild(document.createElement('span'))
-			content.className = 'descriptor'
-			content.textContent = textContent
-			return label
-		}
 		window.onload = function() {
 			var setsSection = document.querySelector('.vallejo-color-sets')
 			sets.map(createSet).forEach(s => setsSection.appendChild(s))
