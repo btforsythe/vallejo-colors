@@ -1,7 +1,7 @@
 function Color(sourceString) {
 
 	const MAX_DISTANCE = Math.sqrt(Math.pow(255, 2) * 3)
-	console.log("max distance is " + MAX_DISTANCE)
+
 	var results = sourceString.match(/\d+/g)
 	this.red = parseInt(results[0])
 	this.green = parseInt(results[1])
@@ -14,5 +14,14 @@ function Color(sourceString) {
 			+ Math.pow(this.green - other.green, 2)
 			+ Math.pow(this.blue - other.blue, 2))
 		return Math.round(distance / MAX_DISTANCE * 100)
+	}
+
+	this.matches = (other) => {
+		if(other instanceof Color) {
+			return this.red == other.red
+				&& this.green == other.green
+				&& this.blue == other.blue
+		}
+		return this.matches(new Color(other))
 	}
 }

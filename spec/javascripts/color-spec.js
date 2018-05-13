@@ -24,5 +24,26 @@ describe("color", () => {
 			let grey = new Color("rgb(127, 127, 127)")
 			expect(BLACK.similarityWith(grey)).toBe(50)
 		})
+	}),
+	describe("equality", () => {
+		let underTest = new Color('rgb(1, 2, 3)')
+
+		it("should not match", () => {
+			let other = new Color('rgb(4, 5, 6)')
+
+			expect(underTest.matches(other)).toBe(false)
+		}),
+
+		it("should match", () => {
+			let other = new Color('rgb(1, 2, 3)')
+
+			expect(underTest.matches(other)).toBe(true)
+		}),
+
+		it("should match rgb string", () => {
+			let other = 'rgb(1, 2, 3)'
+
+			expect(underTest.matches(other)).toBe(true)
+		})
 	})
 })
