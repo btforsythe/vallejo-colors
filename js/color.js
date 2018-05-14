@@ -25,3 +25,11 @@ function Color(sourceString) {
 		return this.matches(new Color(other))
 	}
 }
+
+Color.fromRgb = function(rgb) {
+	let red = parseInt(rgb.substr(0, 2), 16)
+	let green = parseInt(rgb.substr(2, 2), 16)
+	let blue = parseInt(rgb.substr(4, 2), 16)
+
+	return new Color('rgb(' + red + ',' + green + ',' + blue + ')')
+}
