@@ -16,7 +16,6 @@ describe("color", () => {
 	it("should be creatable with RGB", () => {
 		let expected = new Color('rgb(86, 42, 23)')
 		let underTest = Color.fromRgb('562A17')
-		console.log(underTest)
 
 		expect(underTest.matches(expected)).toBe(true)
 	}),
