@@ -7,8 +7,6 @@ it('color matcher should match colors', () => {
 	let underTest = new ColorMatcher([BLACK, WHITE, GREY])
 	let matches = underTest.match(BLACK)
 
-	console.log(matches)
-
 	expect(matches.get(BLACK)).toBe(100)
 	expect(matches.get(WHITE)).toBe(0)
 	expect(matches.get(GREY)).toBe(50)
