@@ -1,6 +1,6 @@
-function Color(sourceString) {
+const MAX_DISTANCE = Math.sqrt(Math.pow(255, 2) * 3)
 
-	const MAX_DISTANCE = Math.sqrt(Math.pow(255, 2) * 3)
+function Color(sourceString) {
 
 	var results = sourceString.match(/\d+/g)
 	this.red = parseInt(results[0])

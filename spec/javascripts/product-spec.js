@@ -14,5 +14,37 @@ describe('product', () => {
 	it('should have color', () => {
 		var other = 'rgb(23, 42, 86)'
 		expect(underTest.color.matches(other)).toBe(true)
+	}),
+
+	describe('should have category', () => {
+		it('as default when not specified', () => {
+			expect(underTest.category).toBe(PRODUCT_CATEGORIES.PAINT)
+		}),
+		it('as specified value', () => {
+			let underTest = new Product('irrelevant', 'irrelevant',
+				'rgb(0, 0, 0)', 'expected category')
+			expect(underTest.category).toBe('expected category')
+		})
+	}),
+
+	describe('should have range', () => {
+		it('as default when not specified', () => {
+			expect(underTest.range).toBe(PRODUCT_RANGES.MODEL_COLOR)
+		}),
+		it('as specified value', () => {
+			let underTest = new Product('irrelevant', 'irrelevant',
+				'rgb(0, 0, 0)', 'irrelevant', 'expected range')
+			expect(underTest.range).toBe('expected range')
+		})
+	})
+	describe('should have line', () => {
+		it('as default when not specified', () => {
+			expect(underTest.line).toBe(PRODUCT_LINES.MODEL_PAINTS)
+		}),
+		it('as specified value', () => {
+			let underTest = new Product('irrelevant', 'irrelevant',
+				'rgb(0, 0, 0)', 'irrelevant', 'irrelevant', 'expected line')
+			expect(underTest.line).toBe('expected line')
+		})
 	})
 })

@@ -1,20 +1,3 @@
-const PRODUCT_LINES = {
-	DECORATIVE_ARTS: "Decorative Arts"
-}
-
-const PRODUCT_RANGES = {
-	MODEL_WASH: "Model Wash",
-	PIGMENTS: "Pigments",
-	MODEL_AIR: "Model Air",
-	GAME_COLOR: "Game Color",
-	AUXILIARIES: "Auxiliaries"
-}
-
-const PRODUCT_CATEGORIES = {
-	WASH: "wash",
-	MEDIUM: "medium"
-}
-
 var sets = [
 {
 	name: "bogus set",
