@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proximity Calculator</title>
+</head>
+<body>
+	<label for="rgb">RGB:</label>
+	<input type="text" id="rgb" />
+	<label for="setSelector">Set:</label>
+	<select id="setSelector"></select>
+	<button id="find">Find!</button>
+
+	<script src="./js/color.js"></script>
+	<script src="./js/product.js"></script>
+	<script src="./setsData.js"></script>
+
+	<script>
+		window.onload = function() {
+			populateSetSelector()
+			wireFindButton()
+		}
+
+		let populateSetSelector = function() {
+			let setSelector = document.getElementById('setSelector')
+			sets.forEach(set => setSelector.appendChild(createSetOption(set)))
+		}
+
+		let createSetOption = function(set) {
+			let option = document.createElement('option')
+			option.label = set.name
+			return option
+		}
+
+		let wireFindButton = function() {
+			let find = document.getElementById('find')
+			find.onclick = findSetMatches
+		}
+
+		let findSetMatches = function() {
+			console.log("finding matches")
+		}
+	</script>
+</body>
+</html>
