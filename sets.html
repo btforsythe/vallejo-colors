@@ -81,10 +81,13 @@
 		var addVisualCues = function(color, swatch) {
 			if(color.range === PRODUCT_RANGES.AUXILIARIES) {
 				swatch.classList.add('auxiliary')
-			} else if(color.range === PRODUCT_RANGES.MODEL_WASH ||
-				color.category === PRODUCT_CATEGORIES.WASH) {
+			}
+
+			if(color.category === PRODUCT_CATEGORIES.WASH) {
 				swatch.classList.add('wash')
-			} else if(color.range === PRODUCT_RANGES.PIGMENTS) {
+			}
+			
+			if(color.range === PRODUCT_RANGES.PIGMENTS) {
 				swatch.classList.add('pigment')
 			}
 		}

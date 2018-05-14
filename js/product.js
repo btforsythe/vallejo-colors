@@ -9,13 +9,16 @@ const PRODUCT_RANGES = {
 	PIGMENTS: "Pigments",
 	MODEL_AIR: "Model Air",
 	GAME_COLOR: "Game Color",
-	AUXILIARIES: "Auxiliaries"
+	AUXILIARIES: "Auxiliaries",
+	PASTES: "Pastes"
 }
 
 const PRODUCT_CATEGORIES = {
 	PAINT: "paint",
 	WASH: "wash",
-	MEDIUM: "medium"
+	MEDIUM: "medium",
+	PIGMENT: "pigment",
+	PASTE: "paste"
 }
 
 function Product(name, model, rgb, category, range, line) {
@@ -24,7 +27,9 @@ function Product(name, model, rgb, category, range, line) {
 	this.model = model
 	this.rgb = rgb
 
-	this.color = new Color(rgb)
+	if(rgb) {
+		this.color = new Color(rgb)
+	}
 
 	this.category = category || PRODUCT_CATEGORIES.PAINT
 	this.range = range || PRODUCT_RANGES.MODEL_COLOR

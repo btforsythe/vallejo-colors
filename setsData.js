@@ -4,43 +4,18 @@ var sets = [
 	url: "http://yourmom.com",
 	colors: [
 		new Product('Very Pleasing Color', '70.xxx', 'rgb(86, 42, 23)'),
-	{
-		name: "Model Air Color",
-		model: "71.xxx",
-		rgb: "rgb(42, 86, 23)",
-		range: PRODUCT_RANGES.MODEL_AIR
-	},
-	{
-		name: "Wash",
-		model: "76.xxx",
-		rgb: "rgb(86, 23, 42)",
-		range: PRODUCT_RANGES.MODEL_WASH
-	},
-	{
-		name: "Pigment",
-		model: "73.xxx",
-		rgb: "rgb(42, 23, 86)",
-		range: PRODUCT_RANGES.PIGMENTS
-	},
-	{
-		name: "Game Color Wash",
-		model: "73.xxx",
-		rgb: "rgb(23, 42, 86)",
-		range: PRODUCT_RANGES.GAME_COLOR,
-		category: PRODUCT_CATEGORIES.WASH
-	},
-	{
-		name: "Lovely Medium",
-		model: "73.xxx",
-		range: PRODUCT_RANGES.AUXILIARIES,
-		category: PRODUCT_CATEGORIES.MEDIUM
-	},
-	{
-		name: "Pasty Paste",
-		model: "26.xxx",
-		line: PRODUCT_LINES.DECORATIVE_ARTS,
-		range: PRODUCT_RANGES.AUXILIARIES
-	}
+		new Product('Model Air Color', '71.xxx', 'rgb(42, 86, 23)',
+			PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.MODEL_AIR),
+		new Product('Wash', '76.xxx', 'rgb(86, 23, 42)',
+			PRODUCT_CATEGORIES.WASH, PRODUCT_RANGES.MODEL_WASH),
+		new Product('Pigment', '73.xxx', 'rgb(42, 23, 86)',
+			PRODUCT_CATEGORIES.PIGMENT, PRODUCT_RANGES.PIGMENTS),
+		new Product('Game Color Wash', '73.xxx', 'rgb(23, 42, 86)',
+			PRODUCT_CATEGORIES.WASH, PRODUCT_RANGES.GAME_COLOR),
+		new Product('Lovely Medium', '73.xxx', undefined,
+			PRODUCT_CATEGORIES.MEDIUM, PRODUCT_RANGES.AUXILIARIES),
+		new Product('Pasty Paste', '26.xxx', undefined, PRODUCT_CATEGORIES.PASTE,
+			PRODUCT_RANGES.AUXILIARIES, PRODUCT_LINES.DECORATIVE_ARTS)
 	]
 },
 {

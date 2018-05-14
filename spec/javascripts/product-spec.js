@@ -46,5 +46,12 @@ describe('product', () => {
 				'rgb(0, 0, 0)', 'irrelevant', 'irrelevant', 'expected line')
 			expect(underTest.line).toBe('expected line')
 		})
+	}),
+
+	it('should not have color if undefined', () => {
+		let underTest = new Product('irrelevant', 'irrelevant', undefined)
+
+		expect(underTest.rgb).toBe(undefined)
+		expect(underTest.color).toBe(undefined)
 	})
 })
