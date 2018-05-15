@@ -2,10 +2,19 @@
 <html>
 <head>
 	<title>Proximity Calculator</title>
+
+	<style>
+		.colorDisplay {
+			padding: 0.35rem 0.7rem;
+			border: solid 0.05rem black;
+			margin: 0 0.2rem;
+		}
+	</style>
 </head>
 <body>
 	<label for="rgb">RGB:</label>
 	<input type="text" id="rgb" />
+	<span class="colorDisplay"></span>
 	<label for="setSelector">Set:</label>
 	<select id="setSelector"></select>
 	<button id="find">Find!</button>
@@ -15,9 +24,20 @@
 	<script src="./js/color-matcher.js"></script>
 	<script src="./setsData.js"></script>
 
+	<table>
+		<thead>
+			<tr>
+				<th>Color</th>
+				<th colspan="2">Model</th>
+				<th>Similarity</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
 	<script>
 		window.onload = function() {
 			populateSetSelector()
+			wireColorDisplayUpdate()
 			wireFindButton()
 		}
 
@@ -34,6 +54,22 @@
 			return option
 		}
 
+		let wireColorDisplayUpdate = function() {
+			rgbInput().onchange = () => {
+				let selectedColor = colorToMatch()
+				let colorHex = '' + parseInt(selectedColor.red, 16)
+				console.log(colorHex)
+				colorDisplay().style.backgroundColor =
+					`rgb(${selectedColor.blue}, ${selectedColor.green},
+					${selectedColor.blue})`
+			}
+		}
+
+		let rgbInput = () => document.getElementById('rgb')
+		let colorDisplay = () => document.querySelector('#rgb + .colorDisplay')
+
+		let colorToMatch = () => Color.fromRgb(rgbInput().value)
+
 		let wireFindButton = function() {
 			let find = document.getElementById('find')
 			find.onclick = findSetMatches
@@ -41,23 +77,26 @@
 
 		let findSetMatches = function() {
 
-			let setColors = selectedSet().products
-			console.log(setColors)
-
+			let setColors = selectedSet().products.map(p => p.color)\
 			let matches = new ColorMatcher(setColors).match(colorToMatch())
 
-			console.log(matches)
+			// clearMatchTableRows()
+			matches.forEach(addMatchTableRow)
 		}
 
+		// let clearMatchTableRows = 
+		let addMatchTableRow = (similarity, color) => {
+
+		}
+
+		let matchesTableBody = document.querySelector(.matches)
+
 		let selectedSet = () => findSetNamed(selectedSetName())
-		let selectedSetName = () => setSelector().selectedOptions[0].value
-
-		let colorToMatch = () => Color.fromRgb(specifiedRgb())
-		let specifiedRgb = () => document.getElementById('rgb').value
-
 		let findSetNamed = function(name) {
 			return sets.find(s => s.name === name)
 		}
+		let selectedSetName = () => setSelector().selectedOptions[0].value
+
 	</script>
 </body>
 </html>
