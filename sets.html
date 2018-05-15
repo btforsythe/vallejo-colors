@@ -42,7 +42,7 @@
 
 		var createHeading = function(set) {
 			var heading = document.createElement('h2')
-			heading.textContent = set.name
+			heading.textContent = `${set.name} (${set.model})`
 			heading.appendChild(createSetLink(set))
 			return heading
 		}

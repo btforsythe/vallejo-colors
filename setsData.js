@@ -1,5 +1,5 @@
 var sets = [
-new ColorSet('bogus set', 'http://yourmom.com', [
+new ColorSet('bogus set', '42.xxx', 'http://yourmom.com', [
 		new Product('Very Pleasing Color', '70.xxx', 'rgb(86, 42, 23)'),
 		new Product('Model Air Color', '71.xxx', 'rgb(42, 86, 23)',
 			PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.MODEL_AIR),
@@ -14,7 +14,7 @@ new ColorSet('bogus set', 'http://yourmom.com', [
 		new Product('Pasty Paste', '26.xxx', undefined, PRODUCT_CATEGORIES.PASTE,
 			PRODUCT_RANGES.AUXILIARIES, PRODUCT_LINES.DECORATIVE_ARTS)
 	]),
-new ColorSet('Wargames Basics', 'http://www.acrylicosvallejo.com/en_US/wargames-basics/family/15/8', [
+new ColorSet('Wargames Basics', '70.103', 'http://www.acrylicosvallejo.com/en_US/wargames-basics/family/15/8', [
 		new Product('Interm. Green', '70.891', 'rgb(69, 140, 60)'),
 		new Product('Orange Red', '70.910', 'rgb(222, 67, 23)'),
 		new Product('Dark Flesh', '70.927', 'rgb(221, 169, 92)'),
@@ -24,7 +24,7 @@ new ColorSet('Wargames Basics', 'http://www.acrylicosvallejo.com/en_US/wargames-
 		new Product('Medium Blue', '70.963', 'rgb(1, 95, 129)'),
 		new Product('Silver', '70.997', 'rgb(205, 211, 207)')
 	]),
-new ColorSet('Elfos', 'http://www.acrylicosvallejo.com/en_US/elfos/family/15/9', [
+new ColorSet('Elfos', '70.104', 'http://www.acrylicosvallejo.com/en_US/elfos/family/15/9', [
 		new Product('Carmine Red', '70.908', 'rgb(181, 26, 40)'),
 		new Product('Light Flesh', '70.928', 'rgb(255, 240, 217)'),
 		new Product('Transparent Blue', '70.938', 'rgb(131, 148, 168)'),
@@ -34,7 +34,7 @@ new ColorSet('Elfos', 'http://www.acrylicosvallejo.com/en_US/elfos/family/15/9',
 		new Product('Light Yellow', '70.949', 'rgb(253, 232, 91)'),
 		new Product('Gold', '70.996', 'rgb(207, 178, 86)')
 	]),
-new ColorSet('Orcos y Goblins', 'http://www.acrylicosvallejo.com/en_US/orcos-y-goblins/family/15/10', [
+new ColorSet('Orcos y Goblins', '70.105', 'http://www.acrylicosvallejo.com/en_US/orcos-y-goblins/family/15/10', [
 		new Product('Lime Green', '70.827', 'rgb(121, 170, 52)'),
 		new Product('Light Yellow', '70.949', 'rgb(253, 232, 91)'),
 		new Product('Negro', '70.950', 'rgb(25, 23, 28)'),
@@ -44,7 +44,7 @@ new ColorSet('Orcos y Goblins', 'http://www.acrylicosvallejo.com/en_US/orcos-y-g
 		new Product('Verde Medio', '70.891', 'rgb(69, 140, 60)'),
 		new Product('C. Red Vermillion', '70.909', 'rgb(207, 26, 35)')
 	]),
-new ColorSet('Non Death Chaos', 'http://www.acrylicosvallejo.com/en_US/non-death-chaos/family/15/11', [
+new ColorSet('Non Death Chaos', '70.106', 'http://www.acrylicosvallejo.com/en_US/non-death-chaos/family/15/11', [
 		new Product('Ivory', '70.918', 'rgb(245, 244, 223)'),
 		new Product('Oily Steel', '70.865', 'rgb(122, 124, 113)'),
 		new Product('C. Red Vermillion', '70.909', 'rgb(207, 26, 35)'),
@@ -54,7 +54,7 @@ new ColorSet('Non Death Chaos', 'http://www.acrylicosvallejo.com/en_US/non-death
 		new Product('Copper', '70.999', 'rgb(171, 78, 37)'),
 		new Product('Magenta', '70.945', 'rgb(164, 27, 71)')
 	]),
-new ColorSet('Panzer Colors', 'http://www.acrylicosvallejo.com/en_US/panzer-colors/family/15/12', [
+new ColorSet('Panzer Colors', '70.108', 'http://www.acrylicosvallejo.com/en_US/panzer-colors/family/15/12', [
 		new Product('Black Grey', '70.862', 'rgb(45, 55, 56)'),
 		new Product('Chocolate Brown', '70.872', 'rgb(97, 78, 63)'),
 		new Product('Green Brown', '70.879', 'rgb(148, 124, 80)'),
@@ -64,7 +64,7 @@ new ColorSet('Panzer Colors', 'http://www.acrylicosvallejo.com/en_US/panzer-colo
 		new Product('Amarillo Arena', '70.916', 'rgb(222, 197, 117)'),
 		new Product('Oily Steel', '70.865', 'rgb(122, 124, 113)')
 	]),
-new ColorSet('Skintones Colors', 'http://www.acrylicosvallejo.com/en_US/skintones-colors/family/15/13', [
+new ColorSet('Skintones Colors', '70.124', 'http://www.acrylicosvallejo.com/en_US/skintones-colors/family/15/13', [
 		new Product('Basic Skin Tone', '70.815', 'rgb(248, 190, 142)'),
 		new Product('Sunny Skintone', '70.845', 'rgb(239, 179, 106)'),
 		new Product('Medium Fleshtone', '70.860', 'rgb(193, 131, 54)'),
@@ -74,7 +74,7 @@ new ColorSet('Skintones Colors', 'http://www.acrylicosvallejo.com/en_US/skintone
 		new Product('Rose Brown', '70.803', 'rgb(206, 134, 112)'),
 		new Product('Salmon Rosa', '70.835', 'rgb(243, 163, 136)')
 	]),
-new ColorSet('Demag Africa Corps', 'http://www.acrylicosvallejo.com/en_US/demag-africa-corps/family/15/111', [
+new ColorSet('Demag Africa Corps', '70.138', 'http://www.acrylicosvallejo.com/en_US/demag-africa-corps/family/15/111', [
 		new Product('Matt Varnish', '70.520', 'rgb(255, 255, 255)'),
 		new Product('Black Grey', '70.862', 'rgb(45, 55, 56)'),
 		new Product('Gummetal Grey', '70.863', 'rgb(98, 103, 97)'),
@@ -84,7 +84,7 @@ new ColorSet('Demag Africa Corps', 'http://www.acrylicosvallejo.com/en_US/demag-
 		new Product('Light Grey', '70.990', 'rgb(158, 161, 154)'),
 		new Product('Neutral Grey', '70.992', 'rgb(101, 119, 121)')
 	]),
-new ColorSet('Demag Rusia 1942', 'http://www.acrylicosvallejo.com/en_US/demag-rusia-1942/family/15/112', [
+new ColorSet('Demag Rusia 1942', '70.139', 'http://www.acrylicosvallejo.com/en_US/demag-rusia-1942/family/15/112', [
 		new Product('Matt Varnish', '70.520', 'rgb(255, 255, 255)'),
 		new Product('Red Beige', '70.804', 'rgb(202, 149, 99)'),
 		new Product('Red Leather', '70.818', 'rgb(148, 62, 49)'),
@@ -94,7 +94,7 @@ new ColorSet('Demag Rusia 1942', 'http://www.acrylicosvallejo.com/en_US/demag-ru
 		new Product('Foundation White', '70.919', 'rgb(255, 255, 255)'),
 		new Product('Black', '70.950', 'rgb(25, 23, 28)')
 	]),
-new ColorSet('Folkstone Basics', 'http://www.acrylicosvallejo.com/en_US/folkstone-basics/family/15/14', [
+new ColorSet('Folkstone Basics', '70.101', 'http://www.acrylicosvallejo.com/en_US/folkstone-basics/family/15/14', [
 		new Product('Gold', '70.996', 'rgb(207, 178, 86)'),
 		new Product('Silver', '70.997', 'rgb(205, 211, 207)'),
 		new Product('Medium Olive', '70.850', 'rgb(44, 107, 36)'),
@@ -112,7 +112,7 @@ new ColorSet('Folkstone Basics', 'http://www.acrylicosvallejo.com/en_US/folkston
 		new Product('Flat Brown', '70.984', 'rgb(117, 67, 58)'),
 		new Product('Sky Grey', '70.989', 'rgb(188, 190, 185)')
 	]),
-new ColorSet('Folkstone Specialist', 'http://www.acrylicosvallejo.com/en_US/folkstone-specialist/family/15/15', [
+new ColorSet('Folkstone Specialist', '70.102', 'http://www.acrylicosvallejo.com/en_US/folkstone-specialist/family/15/15', [
 		new Product('Gloss Varnish', '70.510', 'rgb(255, 255, 255)'),
 		new Product('Matt Varnish', '70.520', 'rgb(255, 255, 255)'),
 		new Product('Glossy White', '70.842', 'rgb(255, 255, 255)'),
@@ -130,7 +130,7 @@ new ColorSet('Folkstone Specialist', 'http://www.acrylicosvallejo.com/en_US/folk
 		new Product('Gold', '70.996', 'rgb(207, 178, 86)'),
 		new Product('Silver', '70.997', 'rgb(205, 211, 207)')
 	]),
-new ColorSet('WWII German', 'http://www.acrylicosvallejo.com/en_US/wwii-german/family/15/16', [
+new ColorSet('WWII German', '70.107', 'http://www.acrylicosvallejo.com/en_US/wwii-german/family/15/16', [
 		new Product('Brass', '70.801', 'rgb(170, 123, 41)'),
 		new Product('German Orange', '70.805', 'rgb(231, 75, 26)'),
 		new Product('Lazur Yellow', '70.806', 'rgb(235, 229, 131)'),
@@ -148,7 +148,7 @@ new ColorSet('WWII German', 'http://www.acrylicosvallejo.com/en_US/wwii-german/f
 		new Product('Neutral Grey', '70.992', 'rgb(101, 119, 121)'),
 		new Product('German Grey', '70.995', 'rgb(26, 48, 45)')
 	]),
-new ColorSet('WWII Allied', 'http://www.acrylicosvallejo.com/en_US/wwii-allied/family/15/17', [
+new ColorSet('WWII Allied', '70.109', 'http://www.acrylicosvallejo.com/en_US/wwii-allied/family/15/17', [
 		new Product('Sand Light', '70.837', 'rgb(214, 199, 156)'),
 		new Product('Medium Fleshtone', '70.860', 'rgb(193, 131, 54)'),
 		new Product('Gunmetal Grey', '70.863', 'rgb(98, 103, 97)'),
@@ -166,7 +166,7 @@ new ColorSet('WWII Allied', 'http://www.acrylicosvallejo.com/en_US/wwii-allied/f
 		new Product('White', '70.951', 'rgb(255, 255, 255)'),
 		new Product('Khaki', '70.988', 'rgb(153, 146, 92)')
 	]),
-new ColorSet('Napoleonic Colors', 'http://www.acrylicosvallejo.com/en_US/napoleonic-colors/family/15/18', [
+new ColorSet('Napoleonic Colors', '70.110', 'http://www.acrylicosvallejo.com/en_US/napoleonic-colors/family/15/18', [
 		new Product('Basic Skin Tone', '70.815', 'rgb(248, 190, 142)'),
 		new Product('Andrea Blue', '70.841', 'rgb(1, 131, 193)'),
 		new Product('Bright Orange', '70.851', 'rgb(234, 94, 41)'),
@@ -184,7 +184,7 @@ new ColorSet('Napoleonic Colors', 'http://www.acrylicosvallejo.com/en_US/napoleo
 		new Product('Gold', '70.996', 'rgb(207, 178, 86)'),
 		new Product('Silver', '70.997', 'rgb(205, 211, 207)')
 	]),
-new ColorSet('American Civil War', 'http://www.acrylicosvallejo.com/en_US/american-civil-war/family/15/19', [
+new ColorSet('American Civil War', '70.111', 'http://www.acrylicosvallejo.com/en_US/american-civil-war/family/15/19', [
 		new Product('Oxford Blue', '70.807', 'rgb(51, 63, 85)'),
 		new Product('Deep Sky Blue', '70.844', 'rgb(0, 159, 214)'),
 		new Product('Sunny Skitone', '70.845', 'rgb(239, 179, 106)'),
@@ -202,7 +202,7 @@ new ColorSet('American Civil War', 'http://www.acrylicosvallejo.com/en_US/americ
 		new Product('Sky Blue', '70.961', 'rgb(157, 217, 243)'),
 		new Product('Light Grey', '70.990', 'rgb(158, 161, 154)')
 	]),
-new ColorSet('Wargame Special', 'http://www.acrylicosvallejo.com/en_US/wargame-special/family/15/20', [
+new ColorSet('Wargame Special', '70.112', 'http://www.acrylicosvallejo.com/en_US/wargame-special/family/15/20', [
 		new Product('Yellow Fluo', '70.730', 'rgb(242, 231, 63)'),
 		new Product('Orange Fluo', '70.733', 'rgb(234, 95, 14)'),
 		new Product('Magenta Fluo', '70.735', 'rgb(230, 62, 140)'),
@@ -220,7 +220,7 @@ new ColorSet('Wargame Special', 'http://www.acrylicosvallejo.com/en_US/wargame-s
 		new Product('Gold', '70.996', 'rgb(207, 178, 86)'),
 		new Product('Silver', '70.997', 'rgb(205, 211, 207)')
 	]),
-new ColorSet('American Colonial', 'http://www.acrylicosvallejo.com/en_US/american-colonial/family/15/21', [
+new ColorSet('American Colonial', '70.147', 'http://www.acrylicosvallejo.com/en_US/american-colonial/family/15/21', [
 		new Product('Oxford Blue', '70.807', 'rgb(188, 190, 185)'),
 		new Product('Royal Blue', '70.809', 'rgb(55, 78, 130)'),
 		new Product('Scarlet', '70.817', 'rgb(209, 33, 36)'),
@@ -238,7 +238,7 @@ new ColorSet('American Colonial', 'http://www.acrylicosvallejo.com/en_US/america
 		new Product('Flat Earth', '70.983', 'rgb(133, 95, 50)'),
 		new Product('Khaki', '70.988', 'rgb(153, 146, 92)')
 	]),
-new ColorSet('American Revolution', 'http://www.acrylicosvallejo.com/en_US/american-revolution/family/15/22', [
+new ColorSet('American Revolution', '70.148', 'http://www.acrylicosvallejo.com/en_US/american-revolution/family/15/22', [
 		new Product('Gloss Varnish', '70.510', 'rgb(255, 255, 255)'),
 		new Product('Scarlet', '70.817', 'rgb(209, 33, 36)'),
 		new Product('Sunny Skintone', '70.845', 'rgb(239, 179, 106)'),
@@ -256,7 +256,7 @@ new ColorSet('American Revolution', 'http://www.acrylicosvallejo.com/en_US/ameri
 		new Product('Gold', '70.996', 'rgb(207, 178, 84)'),
 		new Product('Silver', '70.997', 'rgb(205, 211, 207)')
 	]),
-new ColorSet('WWII German Camouflage', 'http://www.acrylicosvallejo.com/en_US/wwii-german-camouflage/family/15/23', [
+new ColorSet('WWII German Camouflage', '70.114', 'http://www.acrylicosvallejo.com/en_US/wwii-german-camouflage/family/15/23', [
 		new Product('Brass', '70.801', 'rgb(170, 123, 41)'),
 		new Product('Luftwaffe Unif.', '70.816', 'rgb(65, 74, 83)'),
 		new Product('German C. Beige', '70.821', 'rgb(165, 147, 109)'),
@@ -274,7 +274,7 @@ new ColorSet('WWII German Camouflage', 'http://www.acrylicosvallejo.com/en_US/ww
 		new Product('Park Green Flat', '70.969', 'rgb(0, 128, 79)'),
 		new Product('G. C. Dark Green', '70.979', 'rgb(43, 73, 63)')
 	]),
-new ColorSet('Skintones Colors', 'http://www.acrylicosvallejo.com/en_US/skintones-colors/family/15/24', [
+new ColorSet('Skintones Colors', '70.125', 'http://www.acrylicosvallejo.com/en_US/skintones-colors/family/15/24', [
 		new Product('Rose Brown', '70.803', 'rgb(206, 134, 112)'),
 		new Product('Basic Skin Tone', '70.815', 'rgb(248, 190, 142)'),
 		new Product('Sunny Skintone', '70.845', 'rgb(239, 179, 106)'),
@@ -292,7 +292,7 @@ new ColorSet('Skintones Colors', 'http://www.acrylicosvallejo.com/en_US/skintone
 		new Product('Black', '70.950', 'rgb(25, 23, 28)'),
 		new Product('White', '70.951', 'rgb(255, 255, 255)')
 	]),
-new ColorSet('Basic Colors U.S.A.', 'http://www.acrylicosvallejo.com/en_US/basic-colors-u.s.a./family/15/25', [
+new ColorSet('Basic Colors U.S.A.', '70.140', 'http://www.acrylicosvallejo.com/en_US/basic-colors-u.s.a./family/15/25', [
 		new Product('Reflective Green', '70.890', 'rgb(75, 101, 66)'),
 		new Product('Azure', '70.902', 'rgb(110, 127, 171)'),
 		new Product('Yellow Ochre', '70.913', 'rgb(202, 153, 61)'),
@@ -310,7 +310,7 @@ new ColorSet('Basic Colors U.S.A.', 'http://www.acrylicosvallejo.com/en_US/basic
 		new Product('Gold', '70.996', 'rgb(215, 182, 85)'),
 		new Product('Silver', '70.997', 'rgb(204, 210, 208)')
 	]),
-new ColorSet('Earth Colors', 'http://www.acrylicosvallejo.com/en_US/earth-colors/family/15/26', [
+new ColorSet('Earth Colors', '70.141', 'http://www.acrylicosvallejo.com/en_US/earth-colors/family/15/26', [
 		new Product('Iraqui Sand', '70.819', 'rgb(190, 160, 110)'),
 		new Product('White', '70.820', 'rgb(244, 241, 232)'),
 		new Product('Brown Ochre', '70.856', 'rgb(174, 117, 38)'),
@@ -328,7 +328,7 @@ new ColorSet('Earth Colors', 'http://www.acrylicosvallejo.com/en_US/earth-colors
 		new Product('Medium Grey', '70.987', 'rgb(154, 159, 127)'),
 		new Product('Dark Grey', '70.994', 'rgb(36, 62, 59)')
 	]),
-new ColorSet('Medieval Colors', 'http://www.acrylicosvallejo.com/en_US/medieval-colors/family/15/27', [
+new ColorSet('Medieval Colors', '70.142', 'http://www.acrylicosvallejo.com/en_US/medieval-colors/family/15/27', [
 		new Product('Green Blue', '70.808', 'rgb(23, 141, 141)'),
 		new Product('Royal Blue', '70.809', 'rgb(55, 78, 130)'),
 		new Product('Royal Purple', '70.810', 'rgb(76, 37, 94)'),
@@ -346,7 +346,7 @@ new ColorSet('Medieval Colors', 'http://www.acrylicosvallejo.com/en_US/medieval-
 		new Product('Silver', '70.997', 'rgb(204, 210, 206)'),
 		new Product('Bronze', '70.998', 'rgb(119, 108, 54)')
 	]),
-new ColorSet('Equestrian Colors', 'http://www.acrylicosvallejo.com/en_US/equestrian-colors/family/15/28', [
+new ColorSet('Equestrian Colors', '70.144', 'http://www.acrylicosvallejo.com/en_US/equestrian-colors/family/15/28', [
 		new Product('Salmon Rose', '70.835', 'rgb(243, 163, 136)'),
 		new Product('London Grey', '70.836', 'rgb(81, 90, 97)'),
 		new Product('Black Grey', '70.862', 'rgb(45, 55, 56)'),
@@ -364,7 +364,7 @@ new ColorSet('Equestrian Colors', 'http://www.acrylicosvallejo.com/en_US/equestr
 		new Product('Neutral Grey', '70.992', 'rgb(101, 119, 121)'),
 		new Product('Dark Grey', '70.994', 'rgb(36, 62, 59)')
 	]),
-new ColorSet('Native Americans', 'http://www.acrylicosvallejo.com/en_US/native-americans/family/15/29', [
+new ColorSet('Native Americans', '70.145', 'http://www.acrylicosvallejo.com/en_US/native-americans/family/15/29', [
 		new Product('Metal Blue', '70.800', 'rgb(52, 70, 58)'),
 		new Product('Red Beige', '70.804', 'rgb(202, 149, 99)'),
 		new Product('Violet Red', '70.812', 'rgb(110, 38, 62)'),
@@ -382,7 +382,7 @@ new ColorSet('Native Americans', 'http://www.acrylicosvallejo.com/en_US/native-a
 		new Product('Desert Yellow', '70.977', 'rgb(180, 144, 66)'),
 		new Product('Silver', '70.997', 'rgb(204, 210, 206)')
 	]),
-new ColorSet('Naval (Steam Era)', 'http://www.acrylicosvallejo.com/en_US/naval-(steam-era)/family/15/30', [
+new ColorSet('Naval (Steam Era)', '70.146', 'http://www.acrylicosvallejo.com/en_US/naval-(steam-era)/family/15/30', [
 		new Product('Brass', '70.801', 'rgb(170, 123, 41)'),
 		new Product('White', '70.820', 'rgb(244, 241, 232)'),
 		new Product('Black Grey', '70.862', 'rgb(45, 55, 56)'),
@@ -400,7 +400,7 @@ new ColorSet('Naval (Steam Era)', 'http://www.acrylicosvallejo.com/en_US/naval-(
 		new Product('Hull Red', '70.985', 'rgb(78, 40, 31)'),
 		new Product('Sky Grey', '70.989', 'rgb(188, 190, 185)')
 	]),
-new ColorSet('Imperial Roman', 'http://www.acrylicosvallejo.com/en_US/imperial-roman/family/15/128', [
+new ColorSet('Imperial Roman', '70.143', 'http://www.acrylicosvallejo.com/en_US/imperial-roman/family/15/128', [
 		new Product('White', '70.951', 'rgb(255, 255, 255)'),
 		new Product('Black', '70.950', 'rgb(0, 0, 0)'),
 		new Product('Flat Flesh', '70.955', 'rgb(222, 174, 120)'),
@@ -418,7 +418,7 @@ new ColorSet('Imperial Roman', 'http://www.acrylicosvallejo.com/en_US/imperial-r
 		new Product('Carmine Red', '70.908', 'rgb(142, 21, 29)'),
 		new Product('Turquoise', '70.966', 'rgb(0, 130, 148)')
 	]),
-new ColorSet('US Infantry Paint Set', 'http://www.acrylicosvallejo.com/en_US/us-infantry-paint-set/family/15/141', [
+new ColorSet('US Infantry Paint Set', '70.160', 'http://www.acrylicosvallejo.com/en_US/us-infantry-paint-set/family/15/141', [
 		new Product('Brown Violet', '70.887', 'rgb(95, 89, 72)'),
 		new Product('Khaki', '70.988', 'rgb(133, 120, 92)'),
 		new Product('Green Grey', '70.886', 'rgb(118, 117, 105)'),
@@ -426,7 +426,7 @@ new ColorSet('US Infantry Paint Set', 'http://www.acrylicosvallejo.com/en_US/us-
 		new Product('Tan Earth', '70.874', 'rgb(143, 116, 91)'),
 		new Product('Red Leather', '70.818', 'rgb(143, 87, 65)')
 	]),
-new ColorSet('German SS Paint Set', 'http://www.acrylicosvallejo.com/en_US/german-ss-paint-set/family/15/144', [
+new ColorSet('German SS Paint Set', '70.158', 'http://www.acrylicosvallejo.com/en_US/german-ss-paint-set/family/15/144', [
 		new Product('German Cam. Orange Ochre', '70.824', 'rgb(164, 127, 76)'),
 		new Product('German Cam. Bright Green', '70.833', 'rgb(93, 112, 76)'),
 		new Product('German Cam. Dark Green', '70.979', 'rgb(74, 76, 70)'),
@@ -434,7 +434,7 @@ new ColorSet('German SS Paint Set', 'http://www.acrylicosvallejo.com/en_US/germa
 		new Product('German Cam. Black Brown', '70.822', 'rgb(72, 67, 65)'),
 		new Product('Light Brown', '70.929', 'rgb(191, 115, 68)')
 	]),
-new ColorSet('British Paint Set', 'http://www.acrylicosvallejo.com/en_US/british-paint-set/family/15/145', [
+new ColorSet('British Paint Set', '70.153', 'http://www.acrylicosvallejo.com/en_US/british-paint-set/family/15/145', [
 		new Product('Russian Uniform WWII', '70.924', 'rgb(104, 99, 78)'),
 		new Product('Khaki', '70.988', 'rgb(133, 120, 92)'),
 		new Product('English Uniform', '70.921', 'rgb(114, 93, 64)'),
@@ -442,7 +442,7 @@ new ColorSet('British Paint Set', 'http://www.acrylicosvallejo.com/en_US/british
 		new Product('Refractive Green', '70.890', 'rgb(85, 86, 67)'),
 		new Product('Flat Earth', '70.983', 'rgb(113, 86, 60)')
 	]),
-new ColorSet('German Infantry Paint Set', 'http://www.acrylicosvallejo.com/en_US/german-infantry-paint-set/family/15/146', [
+new ColorSet('German Infantry Paint Set', '70.154', 'http://www.acrylicosvallejo.com/en_US/german-infantry-paint-set/family/15/146', [
 		new Product('German Cam. Dark Green', '70.979', 'rgb(74, 76, 70)'),
 		new Product('German Cam. Beige WWII', '70.821', 'rgb(135, 133, 110)'),
 		new Product('German Cam. Med. Brown', '70.826', 'rgb(98, 82, 64)'),
@@ -450,7 +450,7 @@ new ColorSet('German Infantry Paint Set', 'http://www.acrylicosvallejo.com/en_US
 		new Product('Green Grey', '70.886', 'rgb(118, 117, 105)'),
 		new Product('German Fieldgrey WWII', '70.830', 'rgb(95, 95, 86)')
 	]),
-new ColorSet('German Armour Paint Set', 'http://www.acrylicosvallejo.com/en_US/german-armour-paint-set/family/15/147', [
+new ColorSet('German Armour Paint Set', '70.155', 'http://www.acrylicosvallejo.com/en_US/german-armour-paint-set/family/15/147', [
 		new Product('Middlestone', '70.882', 'rgb(147, 126, 78)'),
 		new Product('Refractive Green', '70.890', 'rgb(85, 86, 67)'),
 		new Product('Chocolate Brown', '70.872', 'rgb(114, 93, 64)'),
@@ -458,7 +458,7 @@ new ColorSet('German Armour Paint Set', 'http://www.acrylicosvallejo.com/en_US/g
 		new Product('Track Primer', '70.304', 'rgb(88, 75, 62)'),
 		new Product('Ivory', '70.918', 'rgb(243, 239, 211)')
 	]),
-new ColorSet('Infantry Basic Paint Set', 'http://www.acrylicosvallejo.com/en_US/infantry-basic-paint-set/family/15/148', [
+new ColorSet('Infantry Basic Paint Set', '70.156', 'http://www.acrylicosvallejo.com/en_US/infantry-basic-paint-set/family/15/148', [
 		new Product('Flat Flesh', '70.955', 'rgb(224, 166, 125)'),
 		new Product('Beige Brown', '70.875', 'rgb(145, 119, 95)'),
 		new Product('Gunmetal Grey', '70.863', 'rgb(97, 103, 97)'),
@@ -468,7 +468,7 @@ new ColorSet('Infantry Basic Paint Set', 'http://www.acrylicosvallejo.com/en_US/
 		new Product('Flat Red', '70.957', 'rgb(166, 59, 57)'),
 		new Product('Dark Blue', '70.930', 'rgb(50, 97, 153)')
 	]),
-new ColorSet('Vehicle Basic Paint Set', 'http://www.acrylicosvallejo.com/en_US/vehicle-basic-paint-set/family/15/149', [
+new ColorSet('Vehicle Basic Paint Set', '70.157', 'http://www.acrylicosvallejo.com/en_US/vehicle-basic-paint-set/family/15/149', [
 		new Product('Brass', '70.801', 'rgb(150, 111, 47)'),
 		new Product('Gunmetal Grey', '70.863', 'rgb(97, 103, 97)'),
 		new Product('Track Primer', '70.304', 'rgb(88, 75, 62)'),
@@ -478,7 +478,7 @@ new ColorSet('Vehicle Basic Paint Set', 'http://www.acrylicosvallejo.com/en_US/v
 		new Product('Sepia Wash', '73.200', 'rgb(136, 89, 21)'),
 		new Product('Black Wash', '73.201', 'rgb(0, 0, 0)')
 	]),
-new ColorSet('Waffen Camouflage Set', 'http://www.acrylicosvallejo.com/en_US/waffen-camouflage-set/family/15/150', [
+new ColorSet('Waffen Camouflage Set', '70.180', 'http://www.acrylicosvallejo.com/en_US/waffen-camouflage-set/family/15/150', [
 		new Product('Cam. SS Middle Brown', '70.740', 'rgb(87, 68, 61)'),
 		new Product('Cam. SS Dark Black Green', '70.741', 'rgb(0, 36, 24)'),
 		new Product('Saddle Brown', '70.940', 'rgb(114, 85, 78)'),
@@ -488,7 +488,7 @@ new ColorSet('Waffen Camouflage Set', 'http://www.acrylicosvallejo.com/en_US/waf
 		new Product('Orange Brown', '70.981', 'rgb(184, 108, 57)'),
 		new Product('German Cam. Black Brown', '70.822', 'rgb(72, 67, 65)')
 	]),
-new ColorSet('German Field Grey', 'http://www.acrylicosvallejo.com/en_US/german-field-grey/family/15/151', [
+new ColorSet('German Field Grey', '70.181', 'http://www.acrylicosvallejo.com/en_US/german-field-grey/family/15/151', [
 		new Product('German Fieldgrey WWII', '70.830', 'rgb(95, 95, 86)'),
 		new Product('VBronce Green', '70.897', 'rgb(79, 83, 81)'),
 		new Product('Yellow Olive', '70.892', 'rgb(36, 57, 43)'),
@@ -498,7 +498,7 @@ new ColorSet('German Field Grey', 'http://www.acrylicosvallejo.com/en_US/german-
 		new Product('Blue Grey Pale', '70.905', 'rgb(129, 139, 144)'),
 		new Product('Black', '70.950', 'rgb(0, 0, 0)')
 	]),
-new ColorSet('Face Painting Set', 'http://www.acrylicosvallejo.com/en_US/face-painting-set/family/15/31', [
+new ColorSet('Face Painting Set', '70.119', 'http://www.acrylicosvallejo.com/en_US/face-painting-set/family/15/31', [
 		new Product('Red Beige', '70.804', 'rgb(202, 149, 99)'),
 		new Product('Violet Red', '70.812', 'rgb(110, 38, 62)'),
 		new Product('Cad. Umber Red', '70.814', 'rgb(101, 50, 46)'),
@@ -508,7 +508,7 @@ new ColorSet('Face Painting Set', 'http://www.acrylicosvallejo.com/en_US/face-pa
 		new Product('Light Flesh', '70.928', 'rgb(255, 240, 217)'),
 		new Product('Black', '70.950', 'rgb(25, 23, 28)')
 	]),
-new ColorSet('Winter weathering set', 'http://www.acrylicosvallejo.com/en_US/winter-weathering-set/family/15/33', [
+new ColorSet('Winter weathering set', '72.220', 'http://www.acrylicosvallejo.com/en_US/winter-weathering-set/family/15/33', [
 		new Product('Red Leather', '70.818', 'rgb(143, 87, 65)'),
 		new Product('Gunmetal Grey', '70.863', 'rgb(97, 103, 97)'),
 		new Product('Basalt Grey', '70.869', 'rgb(8, 122, 90)'),
@@ -519,7 +519,7 @@ new ColorSet('Winter weathering set', 'http://www.acrylicosvallejo.com/en_US/win
 		new Product('Sepia Wash', '73.200', 'rgb(136, 89, 21)'),
 		new Product('Sandy Paste', '26.232', 'rgb(221, 220, 215)')
 	]),
-new ColorSet('Weathering a Steam Locomotive', 'http://www.acrylicosvallejo.com/en_US/weathering-a-steam-locomotive/family/15/34', [
+new ColorSet('Weathering a Steam Locomotive', '73.099', 'http://www.acrylicosvallejo.com/en_US/weathering-a-steam-locomotive/family/15/34', [
 		new Product('Basic Rust', '73.001', 'rgb(147, 62, 48)'),
 		new Product('Grease and Oil', '73.002', 'rgb(4, 6, 9)'),
 		new Product('Steel', '73.003', 'rgb(122, 124, 113)'),
@@ -530,7 +530,7 @@ new ColorSet('Weathering a Steam Locomotive', 'http://www.acrylicosvallejo.com/e
 		new Product('Liquid Mask', '73.008', 'rgb(255, 255, 255)'),
 		new Product('Matte Varnish', '73.009', 'rgb(255, 255, 255)')
 	]),
-new ColorSet('Black & White', 'http://www.acrylicosvallejo.com/en_US/black-_-white/family/15/127', [
+new ColorSet('Black & White', '70.151', 'http://www.acrylicosvallejo.com/en_US/black-_-white/family/15/127', [
 		new Product('Black', '70.950', 'rgb(0, 0, 0)'),
 		new Product('Dark Grey', '70.994', 'rgb(76, 81, 86)'),
 		new Product('Neutral Grey', '70.992', 'rgb(106, 112, 120)'),
@@ -540,7 +540,7 @@ new ColorSet('Black & White', 'http://www.acrylicosvallejo.com/en_US/black-_-whi
 		new Product('Ivory', '70.918', 'rgb(243, 239, 211)'),
 		new Product('White', '70.951', 'rgb(255, 255, 255)')
 	]),
-new ColorSet('Wood & Leather', 'http://www.acrylicosvallejo.com/en_US/wood-_-leather/family/15/152', [
+new ColorSet('Wood & Leather', '70.182', 'http://www.acrylicosvallejo.com/en_US/wood-_-leather/family/15/152', [
 		new Product('Dark Sand', '70.847', 'rgb(208, 177, 131)'),
 		new Product('Japan Uniform WWII', '70.923', 'rgb(157, 123, 60)'),
 		new Product('Orange Brown', '70.981', 'rgb(184, 108, 57)'),
@@ -550,7 +550,7 @@ new ColorSet('Wood & Leather', 'http://www.acrylicosvallejo.com/en_US/wood-_-lea
 		new Product('Smoke', '70.939', 'rgb(68, 63, 56)'),
 		new Product('Black', '70.950', 'rgb(0, 0, 0)')
 	]),
-new ColorSet('Rust, Stain & Streaking', 'http://www.acrylicosvallejo.com/en_US/rust_-stain-_-streaking/family/15/153', [
+new ColorSet('Rust, Stain & Streaking', '70.183', 'http://www.acrylicosvallejo.com/en_US/rust_-stain-_-streaking/family/15/153', [
 		new Product('Chocolate Brown', '70.872', 'rgb(86, 76, 64)'),
 		new Product('German Cam. Black Brown', '70.822', 'rgb(72, 67, 65)'),
 		new Product('Orange Brown', '70.981', 'rgb(184, 108, 57)'),
@@ -561,7 +561,7 @@ new ColorSet('Rust, Stain & Streaking', 'http://www.acrylicosvallejo.com/en_US/r
 		new Product('Wood', '71.077', 'rgb(164, 112, 54)'),
 		new Product('Light Rust Wash', '76.505', 'rgb(234, 122, 27)')
 	]),
-new ColorSet('Rust and Steel Effects', 'http://www.acrylicosvallejo.com/en_US/rust-and-steel-effects/family/15/126', [
+new ColorSet('Rust and Steel Effects', '70.150', 'http://www.acrylicosvallejo.com/en_US/rust-and-steel-effects/family/15/126', [
 		new Product('Gunmetal Grey', '70.863', 'rgb(97, 103, 97)'),
 		new Product('Basalt Grey', '70.869', 'rgb(8, 122, 90)'),
 		new Product('Burnt Umber', '70.941', 'rgb(103, 81, 65)'),
