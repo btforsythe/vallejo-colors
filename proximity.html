@@ -4,10 +4,46 @@
 	<title>Proximity Calculator</title>
 
 	<style>
+		:root {
+			font-family: sans serif;
+		}
 		.colorDisplay {
-			padding: 0.35rem 0.7rem;
 			border: solid 0.05rem black;
+			padding: 0 0.7rem;
 			margin: 0 0.2rem;
+		}
+		.product-color-similarities {
+			table-layout: fixed;
+			width: 30rem;
+			border-collapse: collapse;
+			margin: 1rem;
+			border-top: none 0;
+			border-radius: 0.2rem;
+			overflow: hidden;
+		}
+		.product-color-similarities caption {
+			font-size: 80%;
+			background-color: #eee;
+			border-bottom: none 0;
+		}
+		.product-color-similarities thead {
+			background-color: #ddd;
+		}
+		.product-color-similarities th, .product-color-similarities td {
+			padding: 0.25rem;
+		}
+		.product-color-similarities tbody tr:nth-child(even) {
+			background-color: #eee;
+		}
+
+		.product-name, .model-number {
+			text-align: left;
+		}
+		col.product-name {
+			width: 15rem;
+		}
+		td.similarity {
+			text-align: right;
 		}
 	</style>
 </head>
@@ -25,11 +61,18 @@
 	<script src="./js/color-set.js"></script>
 	<script src="./setsData.js"></script>
 
-	<table>
+	<table class="product-color-similarities">
+		<caption><em>Product Color Similarities</em></caption>
+		<colgroup>
+			<col class="product-name" />
+			<col />
+			<col class="similarity" />
+			<col />
+		</colgroup>
 		<thead>
 			<tr>
-				<th>Color</th>
-				<th>Model</th>
+				<th class="product-name">Color</th>
+				<th class="model-number">Model</th>
 				<th colspan="2">Similarity</th>
 			</tr>
 		</thead>
@@ -100,23 +143,30 @@
 			let row = document.createElement('tr')
 			matchesTableBody().appendChild(row)
 
-			row.appendChild(buildTd(product.name))
-			row.appendChild(buildTd(product.model))
-			row.appendChild(buildTd(similarity))
+			row.appendChild(buildTd(product.name, 'product-name'))
+			row.appendChild(buildTd(product.model, 'model-number'))
+			row.appendChild(buildTd(similarity + `%`, 'similarity'))
 			row.appendChild(buildColorCell(product))
 		}
 
-		let buildTd = (content) => {
+		let buildTd = (content, className) => {
 			let td = document.createElement('td')
 			td.textContent = content
+			td.className = className
 			return td
 		}
 
 		let buildColorCell = (product) => {
 			let td = document.createElement('td')
-			td.className = 'colorDisplay'
-			td.style.backgroundColor = product.rgb
+			td.appendChild(buildColorDisplaySpan(product.rgb))
 			return td
+		}
+
+		let buildColorDisplaySpan = (rgb) => {
+			let span = document.createElement('span')
+			span.className = 'colorDisplay'
+			span.style.backgroundColor = rgb
+			return span
 		}
 
 		let selectedSet = () => findSetNamed(selectedSetName())
