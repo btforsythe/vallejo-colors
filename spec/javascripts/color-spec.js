@@ -1,6 +1,9 @@
 'use strict'
 
+const BLACK = new Color("rgb(0, 0, 0)")
+
 describe("color", () => {
+	
 	describe("constructor", () => {
 		let color = new Color('rgb(86, 42, 23)')
 		it("should extract red", () => {
@@ -20,7 +23,6 @@ describe("color", () => {
 		expect(underTest.matches(expected)).toBe(true)
 	}),
 	describe("similarity", () => {
-		const BLACK = new Color("rgb(0, 0, 0)")
 
 		it("should be zero", () => {
 			let white = new Color("rgb(255, 255, 255)")
@@ -52,4 +54,49 @@ describe("color", () => {
 			expect(underTest.matches(other)).toBe(true)
 		})
 	})
+}),
+describe("a color null object should be available", () => {
+	beforeEach(() => jasmine.addMatchers({toHaveImmutableProperty: immutablePropertyMatcher}))
+
+	it("that is a constant", function() {
+		expect(Color).toHaveImmutableProperty("UNCOLORED")
+	})
+	describe("with immutable properties named", () => {
+		it("red", () => expect(Color.UNCOLORED).toHaveImmutableProperty("red"))
+		it("green", () => expect(Color.UNCOLORED).toHaveImmutableProperty("green"))
+		it("blue", () => expect(Color.UNCOLORED).toHaveImmutableProperty("blue"))
+	})
+	describe("to have default values", () => {
+		describe("of -1 for", () => {
+			it("red", () => expect(Color.UNCOLORED.red).toBe(-1)),
+			it("green", () => expect(Color.UNCOLORED.green).toBe(-1))
+			it("blue", () => expect(Color.UNCOLORED.blue).toBe(-1))
+		})
+	})
+	it("should never match another color",
+		() => expect(Color.UNCOLORED.matches(BLACK)).toBe(false))
 })
+
+let immutablePropertyMatcher = () => {
+	return {
+		compare: (underTest, propertyName) => {
+
+			let result = {}
+			try {
+				underTest[propertyName] = "foo"
+				result.message = "Expected property " + propertyName + " on "
+					+ underTest + " to be immutable."
+
+			} catch (e) {
+				if(e instanceof TypeError) {
+					result.pass = true
+				} else {
+					result.message = "Expected TypeError to be thrown on attempt " +
+					" to update immutable property, "
+					+ "but was " + e.constructor.name + "."
+				}
+			}
+			return result
+		}
+	}
+}

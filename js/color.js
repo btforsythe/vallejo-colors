@@ -28,6 +28,28 @@ Color.prototype.matches = function(other) {
 	return this.matches(new Color(other))
 }
 
+const foo = 0
+const UNCOLORED = {
+	red: foo
+// 	let green = 0
+// 	let blue = 0
+
+// 	let similarityWith = () => 0
+// 	let differenceWith = () => 100
+// 	let matches = () => false
+}
+
+var defaults = {
+	matches: () => false
+}
+Object.defineProperty(defaults, 'red', { value: -1 })
+Object.defineProperty(defaults, 'green', { value: -1 })
+Object.defineProperty(defaults, 'blue', { value: -1 })
+
+Object.defineProperty(Color, 'UNCOLORED', {
+	value: defaults
+})
+
 Color.fromRgb = function(rgb) {
 	let red = parseInt(rgb.substr(0, 2), 16)
 	let green = parseInt(rgb.substr(2, 2), 16)
