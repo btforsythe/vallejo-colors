@@ -1,5 +1,6 @@
-function ColorSet(name, url, products) {
+function ColorSet(name, model, url, products) {
 	this.name = name
+	this.model = model
 	this.url = url
 
 	this.productsByModel = new Map()
