@@ -58,7 +58,7 @@
 		var createSwatches = function(set) {
 			var swatches = document.createElement('div')
 			swatches.className = 'swatches'
-			set.colors.map(createSwatch).forEach(c => swatches.appendChild(c))
+			set.products.map(createSwatch).forEach(c => swatches.appendChild(c))
 			return swatches
 		}
 

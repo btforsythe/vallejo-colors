@@ -41,7 +41,9 @@
 
 		let findSetMatches = function() {
 
-			let setColors = selectedSet().colors
+			let setColors = selectedSet().products
+			console.log(setColors)
+
 			let matches = new ColorMatcher(setColors).match(colorToMatch())
 
 			console.log(matches)

@@ -2,7 +2,7 @@ var sets = [
 {
 	name: "bogus set",
 	url: "http://yourmom.com",
-	colors: [
+	products: [
 		new Product('Very Pleasing Color', '70.xxx', 'rgb(86, 42, 23)'),
 		new Product('Model Air Color', '71.xxx', 'rgb(42, 86, 23)',
 			PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.MODEL_AIR),
@@ -21,7 +21,7 @@ var sets = [
 {
 	name: "Wargames Basics",
 	url: "http://www.acrylicosvallejo.com/en_US/wargames-basics/family/15/8",
-	colors: [
+	products: [
 		new Product('Interm. Green', '70.891', 'rgb(69, 140, 60)'),
 		new Product('Orange Red', '70.910', 'rgb(222, 67, 23)'),
 		new Product('Dark Flesh', '70.927', 'rgb(221, 169, 92)'),
@@ -35,7 +35,7 @@ var sets = [
 {
 	name: "Elfos",
 	url: "http://www.acrylicosvallejo.com/en_US/elfos/family/15/9",
-	colors: [
+	products: [
 		new Product('Carmine Red', '70.908', 'rgb(181, 26, 40)'),
 		new Product('Light Flesh', '70.928', 'rgb(255, 240, 217)'),
 		new Product('Transparent Blue', '70.938', 'rgb(131, 148, 168)'),
@@ -49,7 +49,7 @@ var sets = [
 {
 	name: "Orcos y Goblins",
 	url: "http://www.acrylicosvallejo.com/en_US/orcos-y-goblins/family/15/10",
-	colors: [
+	products: [
 		new Product('Lime Green', '70.827', 'rgb(121, 170, 52)'),
 		new Product('Light Yellow', '70.949', 'rgb(253, 232, 91)'),
 		new Product('Negro', '70.950', 'rgb(25, 23, 28)'),
@@ -63,7 +63,7 @@ var sets = [
 {
 	name: "Non Death Chaos",
 	url: "http://www.acrylicosvallejo.com/en_US/non-death-chaos/family/15/11",
-	colors: [
+	products: [
 		new Product('Ivory', '70.918', 'rgb(245, 244, 223)'),
 		new Product('Oily Steel', '70.865', 'rgb(122, 124, 113)'),
 		new Product('C. Red Vermillion', '70.909', 'rgb(207, 26, 35)'),
@@ -77,7 +77,7 @@ var sets = [
 {
 	name: "Panzer Colors",
 	url: "http://www.acrylicosvallejo.com/en_US/panzer-colors/family/15/12",
-	colors: [
+	products: [
 		new Product('Black Grey', '70.862', 'rgb(45, 55, 56)'),
 		new Product('Chocolate Brown', '70.872', 'rgb(97, 78, 63)'),
 		new Product('Green Brown', '70.879', 'rgb(148, 124, 80)'),
@@ -91,7 +91,7 @@ var sets = [
 {
 	name: "Skintones Colors",
 	url: "http://www.acrylicosvallejo.com/en_US/skintones-colors/family/15/13",
-	colors: [
+	products: [
 		new Product('Basic Skin Tone', '70.815', 'rgb(248, 190, 142)'),
 		new Product('Sunny Skintone', '70.845', 'rgb(239, 179, 106)'),
 		new Product('Medium Fleshtone', '70.860', 'rgb(193, 131, 54)'),
@@ -105,7 +105,7 @@ var sets = [
 {
 	name: "Demag Africa Corps",
 	url: "http://www.acrylicosvallejo.com/en_US/demag-africa-corps/family/15/111",
-	colors: [
+	products: [
 		new Product('Matt Varnish', '70.520', 'rgb(255, 255, 255)'),
 		new Product('Black Grey', '70.862', 'rgb(45, 55, 56)'),
 		new Product('Gummetal Grey', '70.863', 'rgb(98, 103, 97)'),
@@ -119,7 +119,7 @@ var sets = [
 {
 	name: "Demag Rusia 1942",
 	url: "http://www.acrylicosvallejo.com/en_US/demag-rusia-1942/family/15/112",
-	colors: [
+	products: [
 		new Product('Matt Varnish', '70.520', 'rgb(255, 255, 255)'),
 		new Product('Red Beige', '70.804', 'rgb(202, 149, 99)'),
 		new Product('Red Leather', '70.818', 'rgb(148, 62, 49)'),
@@ -133,7 +133,7 @@ var sets = [
 {
 	name: "Folkstone Basics",
 	url: "http://www.acrylicosvallejo.com/en_US/folkstone-basics/family/15/14",
-	colors: [
+	products: [
 		new Product('Gold', '70.996', 'rgb(207, 178, 86)'),
 		new Product('Silver', '70.997', 'rgb(205, 211, 207)'),
 		new Product('Medium Olive', '70.850', 'rgb(44, 107, 36)'),
@@ -155,7 +155,7 @@ var sets = [
 {
 	name: "Folkstone Specialist",
 	url: "http://www.acrylicosvallejo.com/en_US/folkstone-specialist/family/15/15",
-	colors: [
+	products: [
 		new Product('Gloss Varnish', '70.510', 'rgb(255, 255, 255)'),
 		new Product('Matt Varnish', '70.520', 'rgb(255, 255, 255)'),
 		new Product('Glossy White', '70.842', 'rgb(255, 255, 255)'),
@@ -177,7 +177,7 @@ var sets = [
 {
 	name: "WWII German",
 	url: "http://www.acrylicosvallejo.com/en_US/wwii-german/family/15/16",
-	colors: [
+	products: [
 		new Product('Brass', '70.801', 'rgb(170, 123, 41)'),
 		new Product('German Orange', '70.805', 'rgb(231, 75, 26)'),
 		new Product('Lazur Yellow', '70.806', 'rgb(235, 229, 131)'),
@@ -199,7 +199,7 @@ var sets = [
 {
 	name: "WWII Allied",
 	url: "http://www.acrylicosvallejo.com/en_US/wwii-allied/family/15/17",
-	colors: [
+	products: [
 		new Product('Sand Light', '70.837', 'rgb(214, 199, 156)'),
 		new Product('Medium Fleshtone', '70.860', 'rgb(193, 131, 54)'),
 		new Product('Gunmetal Grey', '70.863', 'rgb(98, 103, 97)'),
@@ -221,7 +221,7 @@ var sets = [
 {
 	name: "Napoleonic Colors",
 	url: "http://www.acrylicosvallejo.com/en_US/napoleonic-colors/family/15/18",
-	colors: [
+	products: [
 		new Product('Basic Skin Tone', '70.815', 'rgb(248, 190, 142)'),
 		new Product('Andrea Blue', '70.841', 'rgb(1, 131, 193)'),
 		new Product('Bright Orange', '70.851', 'rgb(234, 94, 41)'),
@@ -243,7 +243,7 @@ var sets = [
 {
 	name: "American Civil War",
 	url: "http://www.acrylicosvallejo.com/en_US/american-civil-war/family/15/19",
-	colors: [
+	products: [
 		new Product('Oxford Blue', '70.807', 'rgb(51, 63, 85)'),
 		new Product('Deep Sky Blue', '70.844', 'rgb(0, 159, 214)'),
 		new Product('Sunny Skitone', '70.845', 'rgb(239, 179, 106)'),
@@ -265,7 +265,7 @@ var sets = [
 {
 	name: "Wargame Special",
 	url: "http://www.acrylicosvallejo.com/en_US/wargame-special/family/15/20",
-	colors: [
+	products: [
 		new Product('Yellow Fluo', '70.730', 'rgb(242, 231, 63)'),
 		new Product('Orange Fluo', '70.733', 'rgb(234, 95, 14)'),
 		new Product('Magenta Fluo', '70.735', 'rgb(230, 62, 140)'),
@@ -287,7 +287,7 @@ var sets = [
 {
 	name: "American Colonial",
 	url: "http://www.acrylicosvallejo.com/en_US/american-colonial/family/15/21",
-	colors: [
+	products: [
 		new Product('Oxford Blue', '70.807', 'rgb(188, 190, 185)'),
 		new Product('Royal Blue', '70.809', 'rgb(55, 78, 130)'),
 		new Product('Scarlet', '70.817', 'rgb(209, 33, 36)'),
@@ -309,7 +309,7 @@ var sets = [
 {
 	name: "American Revolution",
 	url: "http://www.acrylicosvallejo.com/en_US/american-revolution/family/15/22",
-	colors: [
+	products: [
 		new Product('Gloss Varnish', '70.510', 'rgb(255, 255, 255)'),
 		new Product('Scarlet', '70.817', 'rgb(209, 33, 36)'),
 		new Product('Sunny Skintone', '70.845', 'rgb(239, 179, 106)'),
@@ -331,7 +331,7 @@ var sets = [
 {
 	name: "WWII German Camouflage",
 	url: "http://www.acrylicosvallejo.com/en_US/wwii-german-camouflage/family/15/23",
-	colors: [
+	products: [
 		new Product('Brass', '70.801', 'rgb(170, 123, 41)'),
 		new Product('Luftwaffe Unif.', '70.816', 'rgb(65, 74, 83)'),
 		new Product('German C. Beige', '70.821', 'rgb(165, 147, 109)'),
@@ -353,7 +353,7 @@ var sets = [
 {
 	name: "Skintones Colors",
 	url: "http://www.acrylicosvallejo.com/en_US/skintones-colors/family/15/24",
-	colors: [
+	products: [
 		new Product('Rose Brown', '70.803', 'rgb(206, 134, 112)'),
 		new Product('Basic Skin Tone', '70.815', 'rgb(248, 190, 142)'),
 		new Product('Sunny Skintone', '70.845', 'rgb(239, 179, 106)'),
@@ -375,7 +375,7 @@ var sets = [
 {
 	name: "Basic Colors U.S.A.",
 	url: "http://www.acrylicosvallejo.com/en_US/basic-colors-u.s.a./family/15/25",
-	colors: [
+	products: [
 		new Product('Reflective Green', '70.890', 'rgb(75, 101, 66)'),
 		new Product('Azure', '70.902', 'rgb(110, 127, 171)'),
 		new Product('Yellow Ochre', '70.913', 'rgb(202, 153, 61)'),
@@ -397,7 +397,7 @@ var sets = [
 {
 	name: "Earth Colors",
 	url: "http://www.acrylicosvallejo.com/en_US/earth-colors/family/15/26",
-	colors: [
+	products: [
 		new Product('Iraqui Sand', '70.819', 'rgb(190, 160, 110)'),
 		new Product('White', '70.820', 'rgb(244, 241, 232)'),
 		new Product('Brown Ochre', '70.856', 'rgb(174, 117, 38)'),
@@ -419,7 +419,7 @@ var sets = [
 {
 	name: "Medieval Colors",
 	url: "http://www.acrylicosvallejo.com/en_US/medieval-colors/family/15/27",
-	colors: [
+	products: [
 		new Product('Green Blue', '70.808', 'rgb(23, 141, 141)'),
 		new Product('Royal Blue', '70.809', 'rgb(55, 78, 130)'),
 		new Product('Royal Purple', '70.810', 'rgb(76, 37, 94)'),
@@ -441,7 +441,7 @@ var sets = [
 {
 	name: "Equestrian Colors",
 	url: "http://www.acrylicosvallejo.com/en_US/equestrian-colors/family/15/28",
-	colors: [
+	products: [
 		new Product('Salmon Rose', '70.835', 'rgb(243, 163, 136)'),
 		new Product('London Grey', '70.836', 'rgb(81, 90, 97)'),
 		new Product('Black Grey', '70.862', 'rgb(45, 55, 56)'),
@@ -463,7 +463,7 @@ var sets = [
 {
 	name: "Native Americans",
 	url: "http://www.acrylicosvallejo.com/en_US/native-americans/family/15/29",
-	colors: [
+	products: [
 		new Product('Metal Blue', '70.800', 'rgb(52, 70, 58)'),
 		new Product('Red Beige', '70.804', 'rgb(202, 149, 99)'),
 		new Product('Violet Red', '70.812', 'rgb(110, 38, 62)'),
@@ -485,7 +485,7 @@ var sets = [
 {
 	name: "Naval (Steam Era)",
 	url: "http://www.acrylicosvallejo.com/en_US/naval-(steam-era)/family/15/30",
-	colors: [
+	products: [
 		new Product('Brass', '70.801', 'rgb(170, 123, 41)'),
 		new Product('White', '70.820', 'rgb(244, 241, 232)'),
 		new Product('Black Grey', '70.862', 'rgb(45, 55, 56)'),
@@ -507,7 +507,7 @@ var sets = [
 {
 	name: "Imperial Roman",
 	url: "http://www.acrylicosvallejo.com/en_US/imperial-roman/family/15/128",
-	colors: [
+	products: [
 		new Product('White', '70.951', 'rgb(255, 255, 255)'),
 		new Product('Black', '70.950', 'rgb(0, 0, 0)'),
 		new Product('Flat Flesh', '70.955', 'rgb(222, 174, 120)'),
@@ -529,7 +529,7 @@ var sets = [
 {
 	name: "US Infantry Paint Set",
 	url: "http://www.acrylicosvallejo.com/en_US/us-infantry-paint-set/family/15/141",
-	colors: [
+	products: [
 		new Product('Brown Violet', '70.887', 'rgb(95, 89, 72)'),
 		new Product('Khaki', '70.988', 'rgb(133, 120, 92)'),
 		new Product('Green Grey', '70.886', 'rgb(118, 117, 105)'),
@@ -541,7 +541,7 @@ var sets = [
 {
 	name: "German SS Paint Set",
 	url: "http://www.acrylicosvallejo.com/en_US/german-ss-paint-set/family/15/144",
-	colors: [
+	products: [
 		new Product('German Cam. Orange Ochre', '70.824', 'rgb(164, 127, 76)'),
 		new Product('German Cam. Bright Green', '70.833', 'rgb(93, 112, 76)'),
 		new Product('German Cam. Dark Green', '70.979', 'rgb(74, 76, 70)'),
@@ -553,7 +553,7 @@ var sets = [
 {
 	name: "British Paint Set",
 	url: "http://www.acrylicosvallejo.com/en_US/british-paint-set/family/15/145",
-	colors: [
+	products: [
 		new Product('Russian Uniform WWII', '70.924', 'rgb(104, 99, 78)'),
 		new Product('Khaki', '70.988', 'rgb(133, 120, 92)'),
 		new Product('English Uniform', '70.921', 'rgb(114, 93, 64)'),
@@ -565,7 +565,7 @@ var sets = [
 {
 	name: "German Infantry Paint Set",
 	url: "http://www.acrylicosvallejo.com/en_US/german-infantry-paint-set/family/15/146",
-	colors: [
+	products: [
 		new Product('German Cam. Dark Green', '70.979', 'rgb(74, 76, 70)'),
 		new Product('German Cam. Beige WWII', '70.821', 'rgb(135, 133, 110)'),
 		new Product('German Cam. Med. Brown', '70.826', 'rgb(98, 82, 64)'),
@@ -577,7 +577,7 @@ var sets = [
 {
 	name: "German Armour Paint Set",
 	url: "http://www.acrylicosvallejo.com/en_US/german-armour-paint-set/family/15/147",
-	colors: [
+	products: [
 		new Product('Middlestone', '70.882', 'rgb(147, 126, 78)'),
 		new Product('Refractive Green', '70.890', 'rgb(85, 86, 67)'),
 		new Product('Chocolate Brown', '70.872', 'rgb(114, 93, 64)'),
@@ -589,7 +589,7 @@ var sets = [
 {
 	name: "Infantry Basic Paint Set",
 	url: "http://www.acrylicosvallejo.com/en_US/infantry-basic-paint-set/family/15/148",
-	colors: [
+	products: [
 		new Product('Flat Flesh', '70.955', 'rgb(224, 166, 125)'),
 		new Product('Beige Brown', '70.875', 'rgb(145, 119, 95)'),
 		new Product('Gunmetal Grey', '70.863', 'rgb(97, 103, 97)'),
@@ -603,7 +603,7 @@ var sets = [
 {
 	name: "Vehicle Basic Paint Set",
 	url: "http://www.acrylicosvallejo.com/en_US/vehicle-basic-paint-set/family/15/149",
-	colors: [
+	products: [
 		new Product('Brass', '70.801', 'rgb(150, 111, 47)'),
 		new Product('Gunmetal Grey', '70.863', 'rgb(97, 103, 97)'),
 		new Product('Track Primer', '70.304', 'rgb(88, 75, 62)'),
@@ -617,7 +617,7 @@ var sets = [
 {
 	name: "Waffen Camouflage Set",
 	url: "http://www.acrylicosvallejo.com/en_US/waffen-camouflage-set/family/15/150",
-	colors: [
+	products: [
 		new Product('Cam. SS Middle Brown', '70.740', 'rgb(87, 68, 61)'),
 		new Product('Cam. SS Dark Black Green', '70.741', 'rgb(0, 36, 24)'),
 		new Product('Saddle Brown', '70.940', 'rgb(114, 85, 78)'),
@@ -631,7 +631,7 @@ var sets = [
 {
 	name: "German Field Grey",
 	url: "http://www.acrylicosvallejo.com/en_US/german-field-grey/family/15/151",
-	colors: [
+	products: [
 		new Product('German Fieldgrey WWII', '70.830', 'rgb(95, 95, 86)'),
 		new Product('VBronce Green', '70.897', 'rgb(79, 83, 81)'),
 		new Product('Yellow Olive', '70.892', 'rgb(36, 57, 43)'),
@@ -645,7 +645,7 @@ var sets = [
 {
 	name: "Face Painting Set",
 	url: "http://www.acrylicosvallejo.com/en_US/face-painting-set/family/15/31",
-	colors: [
+	products: [
 		new Product('Red Beige', '70.804', 'rgb(202, 149, 99)'),
 		new Product('Violet Red', '70.812', 'rgb(110, 38, 62)'),
 		new Product('Cad. Umber Red', '70.814', 'rgb(101, 50, 46)'),
@@ -659,7 +659,7 @@ var sets = [
 {
 	name: "Winter weathering set",
 	url: "http://www.acrylicosvallejo.com/en_US/winter-weathering-set/family/15/33",
-	colors: [
+	products: [
 		new Product('Red Leather', '70.818', 'rgb(143, 87, 65)'),
 		new Product('Gunmetal Grey', '70.863', 'rgb(97, 103, 97)'),
 		new Product('Basalt Grey', '70.869', 'rgb(8, 122, 90)'),
@@ -674,7 +674,7 @@ var sets = [
 {
 	name: "Weathering a Steam Locomotive",
 	url: "http://www.acrylicosvallejo.com/en_US/weathering-a-steam-locomotive/family/15/34",
-	colors: [
+	products: [
 		new Product('Basic Rust', '73.001', 'rgb(147, 62, 48)'),
 		new Product('Grease and Oil', '73.002', 'rgb(4, 6, 9)'),
 		new Product('Steel', '73.003', 'rgb(122, 124, 113)'),
@@ -689,7 +689,7 @@ var sets = [
 {
 	name: "Black & White",
 	url: "http://www.acrylicosvallejo.com/en_US/black-_-white/family/15/127",
-	colors: [
+	products: [
 		new Product('Black', '70.950', 'rgb(0, 0, 0)'),
 		new Product('Dark Grey', '70.994', 'rgb(76, 81, 86)'),
 		new Product('Neutral Grey', '70.992', 'rgb(106, 112, 120)'),
@@ -703,7 +703,7 @@ var sets = [
 {
 	name: "Wood & Leather",
 	url: "http://www.acrylicosvallejo.com/en_US/wood-_-leather/family/15/152",
-	colors: [
+	products: [
 		new Product('Dark Sand', '70.847', 'rgb(208, 177, 131)'),
 		new Product('Japan Uniform WWII', '70.923', 'rgb(157, 123, 60)'),
 		new Product('Orange Brown', '70.981', 'rgb(184, 108, 57)'),
@@ -717,7 +717,7 @@ var sets = [
 {
 	name: "Rust, Stain & Streaking",
 	url: "http://www.acrylicosvallejo.com/en_US/rust_-stain-_-streaking/family/15/153",
-	colors: [
+	products: [
 		new Product('Chocolate Brown', '70.872', 'rgb(86, 76, 64)'),
 		new Product('German Cam. Black Brown', '70.822', 'rgb(72, 67, 65)'),
 		new Product('Orange Brown', '70.981', 'rgb(184, 108, 57)'),
@@ -732,7 +732,7 @@ var sets = [
 {
 	name: "Rust and Steel Effects",
 	url: "http://www.acrylicosvallejo.com/en_US/rust-and-steel-effects/family/15/126",
-	colors: [
+	products: [
 		new Product('Gunmetal Grey', '70.863', 'rgb(97, 103, 97)'),
 		new Product('Basalt Grey', '70.869', 'rgb(8, 122, 90)'),
 		new Product('Burnt Umber', '70.941', 'rgb(103, 81, 65)'),
