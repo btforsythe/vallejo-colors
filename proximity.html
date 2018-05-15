@@ -12,6 +12,7 @@
 
 	<script src="./js/color.js"></script>
 	<script src="./js/product.js"></script>
+	<script src="./js/color-matcher.js"></script>
 	<script src="./setsData.js"></script>
 
 	<script>
@@ -21,13 +22,15 @@
 		}
 
 		let populateSetSelector = function() {
-			let setSelector = document.getElementById('setSelector')
-			sets.forEach(set => setSelector.appendChild(createSetOption(set)))
+			let selector = setSelector()
+			sets.map(createSetOption).forEach(o => selector.appendChild(o))
 		}
+
+		let setSelector = () => document.getElementById('setSelector')
 
 		let createSetOption = function(set) {
 			let option = document.createElement('option')
-			option.label = set.name
+			option.textContent = set.name
 			return option
 		}
 
@@ -37,7 +40,21 @@
 		}
 
 		let findSetMatches = function() {
-			console.log("finding matches")
+
+			let setColors = selectedSet().colors
+			let matches = new ColorMatcher(setColors).match(colorToMatch())
+
+			console.log(matches)
+		}
+
+		let selectedSet = () => findSetNamed(selectedSetName())
+		let selectedSetName = () => setSelector().selectedOptions[0].value
+
+		let colorToMatch = () => Color.fromRgb(specifiedRgb())
+		let specifiedRgb = () => document.getElementById('rgb').value
+
+		let findSetNamed = function(name) {
+			return sets.find(s => s.name === name)
 		}
 	</script>
 </body>
