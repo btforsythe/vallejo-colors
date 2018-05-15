@@ -28,7 +28,7 @@ function Product(name, model, rgb, category, range, line) {
 	this.rgb = rgb
 
 	if(rgb) {
-		this.color = new Color(rgb)
+		this.color = Color.fromCss(rgb)
 	}
 
 	this.category = category || PRODUCT_CATEGORIES.PAINT

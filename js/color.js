@@ -1,11 +1,9 @@
 const MAX_DISTANCE = Math.sqrt(Math.pow(255, 2) * 3)
 
-function Color(sourceString) {
-
-	var results = sourceString.match(/\d+/g)
-	this.red = parseInt(results[0])
-	this.green = parseInt(results[1])
-	this.blue = parseInt(results[2])
+function Color(red, green, blue) {
+	this.red = red
+	this.green = green
+	this.blue = blue
 }
 
 Color.prototype.similarityWith = function(other) {
@@ -25,18 +23,7 @@ Color.prototype.matches = function(other) {
 			&& this.green == other.green
 			&& this.blue == other.blue
 	}
-	return this.matches(new Color(other))
-}
-
-const foo = 0
-const UNCOLORED = {
-	red: foo
-// 	let green = 0
-// 	let blue = 0
-
-// 	let similarityWith = () => 0
-// 	let differenceWith = () => 100
-// 	let matches = () => false
+	return this.matches(Color.fromCss(other))
 }
 
 var defaults = {
@@ -55,5 +42,11 @@ Color.fromRgb = function(rgb) {
 	let green = parseInt(rgb.substr(2, 2), 16)
 	let blue = parseInt(rgb.substr(4, 2), 16)
 
-	return new Color('rgb(' + red + ',' + green + ',' + blue + ')')
+	return new Color(red, green, blue)
+}
+
+Color.fromCss = function(css) {
+	var results = css.match(/\d+/g)
+
+	return new Color(parseInt(results[0]), parseInt(results[1]), parseInt(results[2]))
 }

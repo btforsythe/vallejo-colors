@@ -1,49 +1,56 @@
 'use strict'
 
-const BLACK = new Color("rgb(0, 0, 0)")
+const BLACK = Color.fromCss("rgb(0, 0, 0)")
 
 describe("color", () => {
 	
 	describe("constructor", () => {
-		let color = new Color('rgb(86, 42, 23)')
+		let underTest = new Color(86, 42, 23)
 		it("should extract red", () => {
-			expect(color.red).toBe(86)
+			expect(underTest.red).toBe(86)
 		}),
 		it("should extract green", () => {
-			expect(color.green).toBe(42)
+			expect(underTest.green).toBe(42)
 		}),
 		it("should extract blue", () => {
-			expect(color.blue).toBe(23)
+			expect(underTest.blue).toBe(23)
 		})
-	}),
-	it("should be creatable with RGB", () => {
-		let expected = new Color('rgb(86, 42, 23)')
-		let underTest = Color.fromRgb('562A17')
+	})
+	describe("should have factory method for creation", () => {
+		it("via RGB", () => {
+			let expected = Color.fromCss('rgb(86, 42, 23)')
+			let underTest = Color.fromRgb('562A17')
 
-		expect(underTest.matches(expected)).toBe(true)
-	}),
+			expect(underTest.matches(expected)).toBe(true)
+		})
+		it("via CSS", () => {
+			let underTest = Color.fromCss('rgb(0, 0, 0)')
+
+			expect(underTest.matches(BLACK)).toBe(true)
+		})
+	})
 	describe("similarity", () => {
 
 		it("should be zero", () => {
-			let white = new Color("rgb(255, 255, 255)")
+			let white = Color.fromCss("rgb(255, 255, 255)")
 			expect(BLACK.similarityWith(white)).toBe(0)
 		}),
 		it("should be 50%", () => {
-			let grey = new Color("rgb(127, 127, 127)")
+			let grey = Color.fromCss("rgb(127, 127, 127)")
 			expect(BLACK.similarityWith(grey)).toBe(50)
 		})
 	}),
 	describe("equality", () => {
-		let underTest = new Color('rgb(1, 2, 3)')
+		let underTest = Color.fromCss('rgb(1, 2, 3)')
 
 		it("should not match", () => {
-			let other = new Color('rgb(4, 5, 6)')
+			let other = Color.fromCss('rgb(4, 5, 6)')
 
 			expect(underTest.matches(other)).toBe(false)
 		}),
 
 		it("should match", () => {
-			let other = new Color('rgb(1, 2, 3)')
+			let other = Color.fromCss('rgb(1, 2, 3)')
 
 			expect(underTest.matches(other)).toBe(true)
 		}),
