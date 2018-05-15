@@ -61,7 +61,14 @@ describe("color", () => {
 			expect(underTest.matches(other)).toBe(true)
 		})
 	})
-}),
+})
+
+describe("a color should have an immutable property named", () => {
+	it("red", () => expectObj(BLACK).toHaveImmutableProperty("red"))
+	it("green", () => expectObj(BLACK).toHaveImmutableProperty("green"))
+	it("blue", () => expectObj(BLACK).toHaveImmutableProperty("blue"))
+})
+
 describe("a color null object should be available", () => {
 	it("that is a constant", function() {
 		expectObj(Color).toHaveImmutableProperty("UNCOLORED")
@@ -72,13 +79,6 @@ describe("a color null object should be available", () => {
 		it("blue", () => expectObj(Color.UNCOLORED).toHaveImmutableProperty("blue"))
 	})
 
-	var expectObj = (o) => {
-		return {
-			toHaveImmutableProperty: (name) => expect(() => o[name] = "foo")
-				.toThrowError(TypeError)
-		}
-	}
-
 	describe("to have default values", () => {
 		describe("of -1 for", () => {
 			it("red", () => expect(Color.UNCOLORED.red).toBe(-1)),
@@ -86,6 +86,24 @@ describe("a color null object should be available", () => {
 			it("blue", () => expect(Color.UNCOLORED.blue).toBe(-1))
 		})
 	})
-	it("should never match another color",
-		() => expect(Color.UNCOLORED.matches(BLACK)).toBe(false))
+	describe("that should never match", () => {
+		it("another color",
+			() => expect(Color.UNCOLORED.matches(BLACK)).toBe(false))
+		it("itself",
+			() => expect(Color.UNCOLORED.matches(Color.UNCOLORED)).toBe(false))
+		it("when another tries to match it",
+			() => expect(BLACK.matches(Color.UNCOLORED)).toBe(false))
+	})
+	it("should always have a similarity of zero", () => {
+		expect(Color.UNCOLORED.differenceWith(Color.UNCOLORED)).toBe(100)
+		expect(Color.UNCOLORED.similarityWith(Color.UNCOLORED)).toBe(0)
+	})
 })
+
+
+var expectObj = (o) => {
+	return {
+		toHaveImmutableProperty: (name) => expect(() => o[name] = "foo")
+			.toThrowError(TypeError)
+	}
+}
