@@ -56,16 +56,22 @@ describe("color", () => {
 	})
 }),
 describe("a color null object should be available", () => {
-	beforeEach(() => jasmine.addMatchers({toHaveImmutableProperty: immutablePropertyMatcher}))
-
 	it("that is a constant", function() {
-		expect(Color).toHaveImmutableProperty("UNCOLORED")
+		expectObj(Color).toHaveImmutableProperty("UNCOLORED")
 	})
 	describe("with immutable properties named", () => {
-		it("red", () => expect(Color.UNCOLORED).toHaveImmutableProperty("red"))
-		it("green", () => expect(Color.UNCOLORED).toHaveImmutableProperty("green"))
-		it("blue", () => expect(Color.UNCOLORED).toHaveImmutableProperty("blue"))
+		it("red", () => expectObj(Color.UNCOLORED).toHaveImmutableProperty("red"))
+		it("green", () => expectObj(Color.UNCOLORED).toHaveImmutableProperty("green"))
+		it("blue", () => expectObj(Color.UNCOLORED).toHaveImmutableProperty("blue"))
 	})
+
+	var expectObj = (o) => {
+		return {
+			toHaveImmutableProperty: (name) => expect(() => o[name] = "foo")
+				.toThrowError(TypeError)
+		}
+	}
+
 	describe("to have default values", () => {
 		describe("of -1 for", () => {
 			it("red", () => expect(Color.UNCOLORED.red).toBe(-1)),
@@ -76,27 +82,3 @@ describe("a color null object should be available", () => {
 	it("should never match another color",
 		() => expect(Color.UNCOLORED.matches(BLACK)).toBe(false))
 })
-
-let immutablePropertyMatcher = () => {
-	return {
-		compare: (underTest, propertyName) => {
-
-			let result = {}
-			try {
-				underTest[propertyName] = "foo"
-				result.message = "Expected property " + propertyName + " on "
-					+ underTest + " to be immutable."
-
-			} catch (e) {
-				if(e instanceof TypeError) {
-					result.pass = true
-				} else {
-					result.message = "Expected TypeError to be thrown on attempt " +
-					" to update immutable property, "
-					+ "but was " + e.constructor.name + "."
-				}
-			}
-			return result
-		}
-	}
-}
