@@ -1,1 +1,1 @@
-<?php header( 'Location: /sets.html' ) ;  ?>
+<?php include_once("sets.html");  ?>
