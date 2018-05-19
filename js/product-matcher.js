@@ -3,9 +3,26 @@ function ProductMatcher(set) {
 }
 
 ProductMatcher.prototype.match = function(color) {
-	let matchSimilarities = new Map()
-	this.products.forEach(p => {
-		matchSimilarities.set(p, p.color.similarityWith(color))
-	})
-	return matchSimilarities
+	let matches = {
+		similarities: new Map(),
+		highestSimilarity: 0,
+		highest: new Array(),
+		add: function(product) {
+			const similarity = product.color.similarityWith(color)
+			this.similarities.set(product, similarity)
+			this.highestSimilarity = Math.max(this.highestSimilarity, similarity)
+		},
+		populateHighest: function() {
+			this.similarities.forEach(function (similarity, product) {
+				if(similarity == matches.highestSimilarity) {
+					matches.highest.push(product)
+				}
+			})
+		}
+	}
+
+	this.products.forEach(p => matches.add(p))
+	matches.populateHighest()
+
+	return matches
 }
