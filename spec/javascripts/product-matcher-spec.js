@@ -30,6 +30,10 @@ describe('product matcher', () => {
 	})
 
 	it('should return two elements if match percentage is tied', () => {
-		fail('not implemented')
+		const ANOTHER_BLACK = new Product('another black', '70.yyy', 'rgb(0, 0, 0)')
+		let matches = matchBlackTo([BLACK, ANOTHER_BLACK])
+
+		expect(matches.highest).toEqual([BLACK, ANOTHER_BLACK])
+		expect(matches.highestSimilarity).toEqual(100)
 	})
 })
