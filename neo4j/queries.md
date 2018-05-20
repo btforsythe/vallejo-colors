@@ -21,6 +21,7 @@
 - `create constraint on (product:Product) assert product.name is unique`
 - `create constraint on (set:Set) assert set.name is unique`
 - `create constraint on (line:Line) assert line.name is unique`
+- `create constraint on (cg:Category) assert cg.name is unique`
 
 ### Model Numbers
 
