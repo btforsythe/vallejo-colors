@@ -17,7 +17,8 @@ const PRODUCT_CATEGORIES = {
 	WASH: "wash",
 	MEDIUM: "medium",
 	PIGMENT: "pigment",
-	PASTE: "paste"
+	PASTE: "paste",
+	VARNISH: "varnish"
 }
 
 function Product(name, model, rgb, category, range, line) {
