@@ -519,17 +519,6 @@ new ColorSet('Winter weathering set', '72.220', 'http://www.acrylicosvallejo.com
 		new Product('Sepia Wash', '73.200', 'rgb(136, 89, 21)', PRODUCT_CATEGORIES.WASH, PRODUCT_RANGES.GAME_COLOR),
 		new Product('Sandy Paste', '26.232', 'rgb(221, 220, 215)')
 	]),
-new ColorSet('Weathering a Steam Locomotive', '73.099', 'http://www.acrylicosvallejo.com/en_US/weathering-a-steam-locomotive/family/15/34', [
-		new Product('Basic Rust', '73.001', 'rgb(147, 62, 48)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
-		new Product('Grease and Oil', '73.002', 'rgb(4, 6, 9)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
-		new Product('Steel', '73.003', 'rgb(122, 124, 113)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
-		new Product('Basic Brown', '73.004', 'rgb(76, 68, 51)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
-		new Product('Dirt', '73.005', 'rgb(159, 118, 90)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
-		new Product('Chalk White', '73.006', 'rgb(225, 225, 215)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
-		new Product('Basic Red', '73.007', 'rgb(180, 28, 39)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
-		new Product('Liquid Mask', '73.008', 'rgb(255, 255, 255)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
-		new Product('Matte Varnish', '73.009', 'rgb(255, 255, 255)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR)
-	]),
 new ColorSet('Black & White', '70.151', 'http://www.acrylicosvallejo.com/en_US/black-_-white/family/15/127', [
 		new Product('Black', '70.950', 'rgb(0, 0, 0)'),
 		new Product('Dark Grey', '70.994', 'rgb(76, 81, 86)'),
