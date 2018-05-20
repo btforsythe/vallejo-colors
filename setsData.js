@@ -64,7 +64,7 @@ new ColorSet('Panzer Colors', '70.108', 'http://www.acrylicosvallejo.com/en_US/p
 		new Product('Amarillo Arena', '70.916', 'rgb(222, 197, 117)'),
 		new Product('Oily Steel', '70.865', 'rgb(122, 124, 113)')
 	]),
-new ColorSet('Skintones Colors', '70.124', 'http://www.acrylicosvallejo.com/en_US/skintones-colors/family/15/13', [
+new ColorSet('Skintones Colors (8)', '70.124', 'http://www.acrylicosvallejo.com/en_US/skintones-colors/family/15/13', [
 		new Product('Basic Skin Tone', '70.815', 'rgb(248, 190, 142)'),
 		new Product('Sunny Skintone', '70.845', 'rgb(239, 179, 106)'),
 		new Product('Medium Fleshtone', '70.860', 'rgb(193, 131, 54)'),
@@ -274,7 +274,7 @@ new ColorSet('WWII German Camouflage', '70.114', 'http://www.acrylicosvallejo.co
 		new Product('Park Green Flat', '70.969', 'rgb(0, 128, 79)'),
 		new Product('G. C. Dark Green', '70.979', 'rgb(43, 73, 63)')
 	]),
-new ColorSet('Skintones Colors', '70.125', 'http://www.acrylicosvallejo.com/en_US/skintones-colors/family/15/24', [
+new ColorSet('Skintones Colors (16)', '70.125', 'http://www.acrylicosvallejo.com/en_US/skintones-colors/family/15/24', [
 		new Product('Rose Brown', '70.803', 'rgb(206, 134, 112)'),
 		new Product('Basic Skin Tone', '70.815', 'rgb(248, 190, 142)'),
 		new Product('Sunny Skintone', '70.845', 'rgb(239, 179, 106)'),
