@@ -12,20 +12,22 @@ var writeLineQueries = function() {
 }
 
 var writeRangeQueries = function() {
-	var queries = [createLineMatch('decorativeArts', PRODUCT_LINES.DECORATIVE_ARTS),
-		createLineMatch('modelPaints', PRODUCT_LINES.MODEL_PAINTS),
-		createRangeMergeQuery('decorativeArts', PRODUCT_RANGES.AUXILIARIES)]
+	var queries = [createLineMatch(PRODUCT_LINES.DECORATIVE_ARTS),
+		createLineMatch(PRODUCT_LINES.MODEL_PAINTS),
+		createRangeMergeQuery(PRODUCT_LINES.DECORATIVE_ARTS, PRODUCT_RANGES.AUXILIARIES)]
 	for(const range in PRODUCT_RANGES) {
-		queries.push(createRangeMergeQuery('modelPaints', PRODUCT_RANGES[range]))
+		queries.push(createRangeMergeQuery(PRODUCT_LINES.MODEL_PAINTS, PRODUCT_RANGES[range]))
 	}
 	populateQueries('.rangeQueries', queries)
 }
 
-var createLineMatch = (lineVariable, line) => `match(${lineVariable}:Line {name:"${line}"})`
+var createLineMatch = (line) => `match(${toSnakeCase(line)}:Line {name:"${line}"})`
 
-var createRangeMergeQuery = (lineVariable, range) =>
-	`merge(${lineVariable})<-[:belongs_to]-(:Range {name:"${range}"})`
+var createRangeMergeQuery = (line, range) =>
+	`merge(${toSnakeCase(line)})<-[:belongs_to]-(:Range {name:"${range}"})`
 
 var populateQueries = function(selector, queries) {
 	document.querySelector(selector).innerText = queries.join('\n')
 }
+
+var toSnakeCase = input => input.toLowerCase().replace(' ', '_')
