@@ -7,8 +7,13 @@
 	<script src="./generate-product-hierarchy-queries.js"></script>
 </head>
 <body>
-	<h1>Product Hierarchy Population</h1>
-	<h2>Lines</h2>
+	<h1>Product Hierarchy<h1>
+	<h2>Population</h2>
+	<h3>Lines</h3>
 	<pre class="lineQueries"></pre>
+	<h3>Ranges</h3>
+	<pre class="rangeQueries"></pre>
+	<h2>Selection</h2>
+	<pre>match(line:Line)<-[:belongs_to]-(range:Range) return line, range</pre>
 </body>
 </html>
