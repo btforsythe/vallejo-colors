@@ -1,6 +1,7 @@
 window.onload = function() {
 	writeLineQueries()
 	writeRangeQueries()
+	writeCategoryQueries()
 }
 
 var writeLineQueries = function() {
@@ -25,3 +26,11 @@ var createLineMatch = (line) => `match(${toSnakeCase(line)}:Line {name:"${line}"
 
 var createRangeMergeQuery = (line, range) =>
 	`merge(${toSnakeCase(line)})<-[:belongs_to]-(:Range {name:"${range}"})`
+
+var writeCategoryQueries = function() {
+	var queries = []
+	for(const cg in PRODUCT_CATEGORIES) {
+		queries.push(`create(:Category {name:"${PRODUCT_CATEGORIES[cg]}"})`)
+	}
+	populateQueries('.categoryQueries', queries)
+}

@@ -475,8 +475,8 @@ new ColorSet('Vehicle Basic Paint Set', '70.157', 'http://www.acrylicosvallejo.c
 		new Product('Dark Rubber', '70.306', 'rgb(80, 83, 83)'),
 		new Product('New Wood', '70.311', 'rgb(167, 99, 59)'),
 		new Product('Canvas', '70.314', 'rgb(100, 89, 52)'),
-		new Product('Sepia Wash', '73.200', 'rgb(136, 89, 21)'),
-		new Product('Black Wash', '73.201', 'rgb(0, 0, 0)')
+		new Product('Sepia Wash', '73.200', 'rgb(136, 89, 21)', PRODUCT_CATEGORIES.WASH, PRODUCT_RANGES.GAME_COLOR),
+		new Product('Black Wash', '73.201', 'rgb(0, 0, 0)', PRODUCT_CATEGORIES.WASH, PRODUCT_RANGES.GAME_COLOR)
 	]),
 new ColorSet('Waffen Camouflage Set', '70.180', 'http://www.acrylicosvallejo.com/en_US/waffen-camouflage-set/family/15/150', [
 		new Product('Cam. SS Middle Brown', '70.740', 'rgb(87, 68, 61)'),
@@ -516,19 +516,19 @@ new ColorSet('Winter weathering set', '72.220', 'http://www.acrylicosvallejo.com
 		new Product('Tan Earth', '70.874', 'rgb(143, 116, 91)'),
 		new Product('Foundation White', '70.919', 'rgb(255, 255, 255)'),
 		new Product('Black', '70.950', 'rgb(0, 0, 0)'),
-		new Product('Sepia Wash', '73.200', 'rgb(136, 89, 21)'),
+		new Product('Sepia Wash', '73.200', 'rgb(136, 89, 21)', PRODUCT_CATEGORIES.WASH, PRODUCT_RANGES.GAME_COLOR),
 		new Product('Sandy Paste', '26.232', 'rgb(221, 220, 215)')
 	]),
 new ColorSet('Weathering a Steam Locomotive', '73.099', 'http://www.acrylicosvallejo.com/en_US/weathering-a-steam-locomotive/family/15/34', [
-		new Product('Basic Rust', '73.001', 'rgb(147, 62, 48)'),
-		new Product('Grease and Oil', '73.002', 'rgb(4, 6, 9)'),
-		new Product('Steel', '73.003', 'rgb(122, 124, 113)'),
-		new Product('Basic Brown', '73.004', 'rgb(76, 68, 51)'),
-		new Product('Dirt', '73.005', 'rgb(159, 118, 90)'),
-		new Product('Chalk White', '73.006', 'rgb(225, 225, 215)'),
-		new Product('Basic Red', '73.007', 'rgb(180, 28, 39)'),
-		new Product('Liquid Mask', '73.008', 'rgb(255, 255, 255)'),
-		new Product('Matte Varnish', '73.009', 'rgb(255, 255, 255)')
+		new Product('Basic Rust', '73.001', 'rgb(147, 62, 48)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
+		new Product('Grease and Oil', '73.002', 'rgb(4, 6, 9)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
+		new Product('Steel', '73.003', 'rgb(122, 124, 113)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
+		new Product('Basic Brown', '73.004', 'rgb(76, 68, 51)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
+		new Product('Dirt', '73.005', 'rgb(159, 118, 90)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
+		new Product('Chalk White', '73.006', 'rgb(225, 225, 215)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
+		new Product('Basic Red', '73.007', 'rgb(180, 28, 39)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
+		new Product('Liquid Mask', '73.008', 'rgb(255, 255, 255)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR),
+		new Product('Matte Varnish', '73.009', 'rgb(255, 255, 255)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.TRAIN_COLOR)
 	]),
 new ColorSet('Black & White', '70.151', 'http://www.acrylicosvallejo.com/en_US/black-_-white/family/15/127', [
 		new Product('Black', '70.950', 'rgb(0, 0, 0)'),
@@ -557,9 +557,9 @@ new ColorSet('Rust, Stain & Streaking', '70.183', 'http://www.acrylicosvallejo.c
 		new Product('Chocolate Brown', '70.872', 'rgb(86, 76, 64)'),
 		new Product('Light Rust', '70.301', 'rgb(136, 57, 40)'),
 		new Product('Dark Rust', '70.302', 'rgb(52, 45, 40)'),
-		new Product('Orange Rust', '71.130', 'rgb(195, 98, 45)'),
-		new Product('Wood', '71.077', 'rgb(164, 112, 54)'),
-		new Product('Light Rust Wash', '76.505', 'rgb(234, 122, 27)')
+		new Product('Orange Rust', '71.130', 'rgb(195, 98, 45)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.MODEL_AIR),
+		new Product('Wood', '71.077', 'rgb(164, 112, 54)', PRODUCT_CATEGORIES.PAINT, PRODUCT_RANGES.MODEL_AIR),
+		new Product('Light Rust Wash', '76.505', 'rgb(234, 122, 27)', PRODUCT_CATEGORIES.WASH, PRODUCT_RANGES.MODEL_WASH)
 	]),
 new ColorSet('Rust and Steel Effects', '70.150', 'http://www.acrylicosvallejo.com/en_US/rust-and-steel-effects/family/15/126', [
 		new Product('Gunmetal Grey', '70.863', 'rgb(97, 103, 97)'),
@@ -569,8 +569,8 @@ new ColorSet('Rust and Steel Effects', '70.150', 'http://www.acrylicosvallejo.co
 		new Product('Red Leather', '70.818', 'rgb(143, 87, 65)'),
 		new Product('Orange Brown', '70.981', 'rgb(184, 108, 57)'),
 		new Product('Clear Orange', '70.956', 'rgb(200, 77, 54)'),
-		new Product('Sepia Wash', '73.200', 'rgb(136, 89, 21)'),
-		new Product('Brown Iron Oxide Pigment', '73.108', 'rgb(140, 64, 61)')
+		new Product('Sepia Wash', '73.200', 'rgb(136, 89, 21)', PRODUCT_CATEGORIES.WASH, PRODUCT_RANGES.GAME_COLOR),
+		new Product('Brown Iron Oxide Pigment', '73.108', 'rgb(140, 64, 61)', PRODUCT_CATEGORIES.PIGMENT, PRODUCT_RANGES.PIGMENTS)
 	])
 ]
 

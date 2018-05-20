@@ -9,7 +9,8 @@ const PRODUCT_RANGES = {
 	PIGMENTS: "Pigments",
 	MODEL_AIR: "Model Air",
 	GAME_COLOR: "Game Color",
-	AUXILIARIES: "Auxiliaries"
+	AUXILIARIES: "Auxiliaries",
+	TRAIN_COLOR: "Train Color"
 }
 
 const PRODUCT_CATEGORIES = {

@@ -14,7 +14,12 @@
 	<pre class="lineQueries"></pre>
 	<h3>Ranges</h3>
 	<pre class="rangeQueries"></pre>
+	<h3>Categories</h3>
+	<pre class="categoryQueries"></pre>
 	<h2>Selection</h2>
-	<pre>match(line:Line)<-[:belongs_to]-(range:Range) return line, range</pre>
+	<ul>
+		<li>Lines/Ranges: <pre>match(line:Line)<-[:belongs_to]-(range:Range) return line, range</pre></li>
+		<li>Categories: <pre>match(cg:Category) return cg</pre></li>
+	</ul>
 </body>
 </html>
