@@ -29,7 +29,20 @@
 - `create constraint on (product:Product) assert product.modelNumber is unique`.
 - `create constraint on (set:Set) assert set.modelNumber is unique`.
 
+### Populate CSS color value
+
+- On merge if node was created: `merge (product:Product {red: 86, green: 42, blue: 23}) on create set product.cssColor = "rgb(" + product.red + ", " + product.green + ", " + product.blue + ")"`
+- For all products: `merge (product:Product) set product.cssColor = "rgb(" + product.red + ", " + product.green + ", " + product.blue + ")"`
+
+[TODO use stored procedure for this?]
+
 ## Limitations of Community Edition
 
 - Can't set constraint that a property must exist.
 - Can't assign uniqueness to an aggregate of properties.
+
+## References
+
+- [`CASE` expressions](https://neo4j.com/docs/developer-manual/current/cypher/syntax/expressions/#query-syntax-case)
+- [`MERGE` clauses](https://neo4j.com/docs/developer-manual/3.4/cypher/clauses/merge/)
+- [Constraints](https://neo4j.com/docs/developer-manual/3.4/cypher/schema/constraints/)
