@@ -75,7 +75,7 @@ new ColorSet('Skintones Colors (8)', '70.124', 'http://www.acrylicosvallejo.com/
 		new Product('Salmon Rosa', '70.835', 'rgb(243, 163, 136)')
 	]),
 new ColorSet('Demag Africa Corps', '70.138', 'http://www.acrylicosvallejo.com/en_US/demag-africa-corps/family/15/111', [
-		new Product('Matt Varnish', '70.520', 'rgb(255, 255, 255)', PRODUCT_CATEGORIES.VARNISH, PRODUCT_RANGES.AUXILIARIES),
+		new Product('Matt Varnish', '70.520', undefined, PRODUCT_CATEGORIES.VARNISH, PRODUCT_RANGES.AUXILIARIES),
 		new Product('Black Grey', '70.862', 'rgb(45, 55, 56)'),
 		new Product('Gummetal Grey', '70.863', 'rgb(98, 103, 97)'),
 		new Product('Olive Grey', '70.888', 'rgb(57, 85, 71)'),
@@ -85,7 +85,7 @@ new ColorSet('Demag Africa Corps', '70.138', 'http://www.acrylicosvallejo.com/en
 		new Product('Neutral Grey', '70.992', 'rgb(101, 119, 121)')
 	]),
 new ColorSet('Demag Rusia 1942', '70.139', 'http://www.acrylicosvallejo.com/en_US/demag-rusia-1942/family/15/112', [
-		new Product('Matt Varnish', '70.520', 'rgb(255, 255, 255)', PRODUCT_CATEGORIES.VARNISH, PRODUCT_RANGES.AUXILIARIES),
+		new Product('Matt Varnish', '70.520', undefined, PRODUCT_CATEGORIES.VARNISH, PRODUCT_RANGES.AUXILIARIES),
 		new Product('Red Beige', '70.804', 'rgb(202, 149, 99)'),
 		new Product('Red Leather', '70.818', 'rgb(148, 62, 49)'),
 		new Product('Black Grey', '70.862', 'rgb(45, 55, 56)'),
@@ -113,15 +113,15 @@ new ColorSet('Folkstone Basics', '70.101', 'http://www.acrylicosvallejo.com/en_U
 		new Product('Sky Grey', '70.989', 'rgb(188, 190, 185)')
 	]),
 new ColorSet('Folkstone Specialist', '70.102', 'http://www.acrylicosvallejo.com/en_US/folkstone-specialist/family/15/15', [
-		new Product('Gloss Varnish', '70.510', 'rgb(255, 255, 255)', PRODUCT_CATEGORIES.VARNISH, PRODUCT_RANGES.AUXILIARIES),
-		new Product('Matt Varnish', '70.520', 'rgb(255, 255, 255)', PRODUCT_CATEGORIES.VARNISH, PRODUCT_RANGES.AUXILIARIES),
+		new Product('Gloss Varnish', '70.510', undefined, PRODUCT_CATEGORIES.VARNISH, PRODUCT_RANGES.AUXILIARIES),
+		new Product('Matt Varnish', '70.520', undefined, PRODUCT_CATEGORIES.VARNISH, PRODUCT_RANGES.AUXILIARIES),
 		new Product('Glossy White', '70.842', 'rgb(255, 255, 255)'),
 		new Product('Cork Brown', '70.843', 'rgb(167, 121, 88)'),
 		new Product('Deep Sky Blue', '70.844', 'rgb(0, 159, 214)'),
 		new Product('Carne Dorada', '70.845', 'rgb(239, 179, 106)'),
 		new Product('.Mahogany Brown', '70.846', 'rgb(134, 72, 61)'),
 		new Product('Dark Sand', '70.847', 'rgb(215, 184, 120)'),
-		new Product('Satin Varnish', '70.522', 'rgb(255, 255, 255)', PRODUCT_CATEGORIES.VARNISH, PRODUCT_RANGES.AUXILIARIES),
+		new Product('Satin Varnish', '70.522', undefined, PRODUCT_CATEGORIES.VARNISH, PRODUCT_RANGES.AUXILIARIES),
 		new Product('Ochre Brown', '70.856', 'rgb(174, 117, 38)'),
 		new Product('Glossy Black', '70.861', 'rgb(5, 6, 8)'),
 		new Product('Marrón Chocolate', '70.872', 'rgb(97, 78, 63)'),
@@ -239,7 +239,7 @@ new ColorSet('American Colonial', '70.147', 'http://www.acrylicosvallejo.com/en_
 		new Product('Khaki', '70.988', 'rgb(153, 146, 92)')
 	]),
 new ColorSet('American Revolution', '70.148', 'http://www.acrylicosvallejo.com/en_US/american-revolution/family/15/22', [
-		new Product('Gloss Varnish', '70.510', 'rgb(255, 255, 255)', PRODUCT_CATEGORIES.VARNISH, PRODUCT_RANGES.AUXILIARIES),
+		new Product('Gloss Varnish', '70.510', undefined, PRODUCT_CATEGORIES.VARNISH, PRODUCT_RANGES.AUXILIARIES),
 		new Product('Scarlet', '70.817', 'rgb(209, 33, 36)'),
 		new Product('Sunny Skintone', '70.845', 'rgb(239, 179, 106)'),
 		new Product('Mahogany Brown', '70.846', 'rgb(134, 72, 61)'),
