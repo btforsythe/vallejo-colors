@@ -8,10 +8,12 @@
 	<script src="../../js/color-set.js"></script>
 	<script src="../../setsData.js"></script>
 	<script src="./js/populate-products.js"></script>
+	<script src="./js/query-utils.js"></script>
 </head>
 <body>
 	<h1>Product Population</h1>
-	<h2>Non 70.xxx Products</h2>
+	<h2>Cleaning up data</h2>
+	<h3>Non 70.xxx Products</h3>
 	<table>
 		<thead>
 			<tr>
@@ -26,5 +28,21 @@
 		<tbody class="non-70-models">
 		</tbody>
 	</table>
+	<h3>Duplicated Products</h3>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Model Number</th>
+				<th>Category</th>
+				<th>Range</th>
+				<th>Line</th>
+			</tr>
+		</thead>
+		<tbody class="duplicatedProducts">
+		</tbody>
+	</table>
+	<h2>Creating Product Nodes</h2>
+	<pre class="productCreationQueries"></pre>
 </body>
 </html>
