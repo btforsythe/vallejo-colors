@@ -1,4 +1,25 @@
 var sets = [
+new ColorSet('my (Vallejo) paints', '', '', [
+		new Product('Black', '70.950', 'rgb(25, 23, 28)'),
+		new Product('White', '70.951', 'rgb(255, 255, 255)'),
+		new Product('Neutral Grey', '70.992', 'rgb(101, 119, 121)'),
+		new Product('Medium Sea Grey', '70.870', 'rgb(118, 124, 134)'),
+		new Product('Dark Bluegrey', '70.867', 'rgb(63, 75, 70)'),
+		new Product('Red', '70.926', 'rgb(145, 38, 44)'),
+		new Product('Flat Yellow', '70.953', 'rgb(254, 208, 26)'),
+		new Product('German Camouflage Light Green', '70.833', 'rgb(84, 133, 54)'),
+		new Product('German Camouflage Dark Green', '70.979', 'rgb(43, 73, 63)'),
+		new Product('Andrea Blue', '70.841', 'rgb(1, 131, 193)'),
+		new Product('Blue', '70.925', 'rgb(0, 50, 97)'),
+		new Product('Cork Brown', '70.843', 'rgb(167, 121, 88)'),
+		new Product('Burnt Umber', '70.941', 'rgb(103, 82, 65)'),
+		// not standard yellow!
+		new Product('Transparent Yellow', '70.937'),
+		new Product('Black Wash', '73.201', 'rgb(0, 0, 0)', PRODUCT_CATEGORIES.WASH, PRODUCT_RANGES.GAME_COLOR),
+		new Product('Umber Wash', '73.203', 'rgb(105, 92, 82)', PRODUCT_CATEGORIES.WASH, PRODUCT_RANGES.GAME_COLOR),
+		new Product('Fleshtone Wash', '73.204', 'rgb(174, 121, 116)', PRODUCT_CATEGORIES.WASH, PRODUCT_RANGES.GAME_COLOR),
+		new Product('Thinner Medium', '70.524', undefined, PRODUCT_CATEGORIES.AUXILIARIES)
+	]),
 new ColorSet('bogus set', '42.xxx', 'http://yourmom.com', [
 		new Product('Very Pleasing Color', '70.xxx', 'rgb(86, 42, 23)'),
 		new Product('Model Air Color', '71.xxx', 'rgb(42, 86, 23)',
@@ -562,5 +583,3 @@ new ColorSet('Rust and Steel Effects', '70.150', 'http://www.acrylicosvallejo.co
 		new Product('Brown Iron Oxide Pigment', '73.108', 'rgb(140, 64, 61)', PRODUCT_CATEGORIES.PIGMENT, PRODUCT_RANGES.PIGMENTS)
 	])
 ]
-
-// TODO this feels hacky
